@@ -1,0 +1,4 @@
+import type {Question} from '@/content/questions';
+export type AnswerRecord={questionId:string;stopId?:string;correct:boolean;attempts:number;skill:string;firstCorrect:boolean};
+export const isCorrect=(q:Question,value:string)=>q.type==='numeric'?value.trim()!==''&&Number.isFinite(Number(value.trim().replace(',','.')))&&Math.abs(Number(value.trim().replace(',','.'))-Number(q.answer))<1e-7:value===q.answer;
+export function evaluate(records:AnswerRecord[]){if(!records.length)return {score:0,passed:false,stars:0,mastery:0};const score=Math.round(records.filter(r=>r.correct).length/records.length*100);const first=records.filter(r=>r.firstCorrect).length;const passed=score>=70;return {score,passed,stars:passed?(first===records.length?3:score>=80&&first>=Math.ceil(records.length*.6)?2:1):0,mastery:Math.round(records.reduce((sum,r)=>sum+(r.firstCorrect?1:r.correct?.65:0),0)/records.length*100)}}
