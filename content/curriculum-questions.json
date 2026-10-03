@@ -1,0 +1,1574 @@
+{
+  "stop-0": [
+    {
+      "id": "stop-0-q0",
+      "stopId": "stop-0",
+      "skill": "Funções",
+      "prompt": "Se $f(x) = 2x + 3$, quanto vale $f(4)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "11",
+      "hint": "Substitua apenas a entrada $x$.",
+      "explanation": "Primeiro multiplique por $2$ e depois some $3$.",
+      "solution": "$f(4) = 2 \\cdot 4 + 3 = 11$."
+    },
+    {
+      "id": "stop-0-q1",
+      "stopId": "stop-0",
+      "skill": "Funções",
+      "prompt": "Qual é o domínio real de $g(x) = \\sqrt{x - 2}$?",
+      "type": "choice",
+      "options": [
+        "Todos os reais",
+        "$x \\ge 2$",
+        "$x > 2$",
+        "$x \\le 2$"
+      ],
+      "answer": "1",
+      "hint": "O que precisa acontecer dentro de uma raiz quadrada real?",
+      "explanation": "O radicando pode ser zero, mas não negativo.",
+      "solution": "$x - 2 \\ge 0$ equivale a $x \\ge 2$."
+    },
+    {
+      "id": "stop-0-q2",
+      "stopId": "stop-0",
+      "skill": "Funções",
+      "prompt": "Com domínio real, qual é a imagem de $f(x) = x^{2}$?",
+      "type": "choice",
+      "options": [
+        "Todos os reais",
+        "Apenas os positivos",
+        "Os reais não negativos",
+        "Somente os inteiros"
+      ],
+      "answer": "2",
+      "hint": "Um quadrado real pode ser negativo?",
+      "explanation": "Zero também é atingido, quando $x = 0$.",
+      "solution": "A imagem é $[0,\\infty)$: todo $y \\ge 0$ é o quadrado de $\\sqrt{y}$."
+    },
+    {
+      "id": "stop-0-q3",
+      "stopId": "stop-0",
+      "skill": "Funções",
+      "prompt": "Qual relação NÃO define uma função de $\\{1,2\\}$ em $\\{3,4\\}$?",
+      "type": "choice",
+      "options": [
+        "$1\\to 3$ e $2\\to 3$",
+        "$1\\to 4$ e $2\\to 3$",
+        "$1\\to 3$ e $1\\to 4$ e $2\\to 3$",
+        "$1\\to 3$ e $2\\to 4$"
+      ],
+      "answer": "2",
+      "hint": "Confira quantas saídas cada entrada recebe.",
+      "explanation": "Ter duas entradas com a mesma saída é permitido; duas saídas para a mesma entrada não.",
+      "solution": "A entrada $1$ tem duas saídas distintas, $3$ e $4$."
+    },
+    {
+      "id": "stop-0-q4",
+      "stopId": "stop-0",
+      "skill": "Funções",
+      "prompt": "Qual valor deve ser excluído do domínio de $\\frac{1}{x-5}$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "5",
+      "hint": "Procure o zero do denominador.",
+      "explanation": "Uma divisão por zero não define um número real.",
+      "solution": "$x - 5 = 0$ quando $x = 5$."
+    }
+  ],
+  "stop-1": [
+    {
+      "id": "stop-1-q0",
+      "stopId": "stop-1",
+      "skill": "Funções",
+      "prompt": "O gráfico de $f(x - 3)$ é o de $f$ deslocado…",
+      "type": "choice",
+      "options": [
+        "$3$ para a esquerda",
+        "$3$ para a direita",
+        "$3$ para cima",
+        "$3$ para baixo"
+      ],
+      "answer": "1",
+      "hint": "Pergunte qual $x$ torna $x - 3$ igual a zero.",
+      "explanation": "A entrada original zero reaparece em $x = 3$.",
+      "solution": "Subtrair $3$ da entrada desloca o gráfico $3$ para a direita."
+    },
+    {
+      "id": "stop-1-q1",
+      "stopId": "stop-1",
+      "skill": "Funções",
+      "prompt": "Qual é a coordenada vertical do vértice de $(x + 2)^{2} - 4$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "-4",
+      "hint": "O termo quadrático zera no vértice.",
+      "explanation": "Quando $x = -2$, resta apenas o termo externo.",
+      "solution": "O vértice é $(-2,-4)$, portanto sua altura é $-4$."
+    },
+    {
+      "id": "stop-1-q2",
+      "stopId": "stop-1",
+      "skill": "Funções",
+      "prompt": "Como obter a reflexão de $f$ no eixo $x$?",
+      "type": "choice",
+      "options": [
+        "$f(-x)$",
+        "$f(x) + 1$",
+        "$-f(x)$",
+        "$f(x - 1)$"
+      ],
+      "answer": "2",
+      "hint": "O que acontece com a altura de cada ponto?",
+      "explanation": "As entradas ficam iguais e as saídas trocam de sinal.",
+      "solution": "A transformação é $y = -f(x)$."
+    },
+    {
+      "id": "stop-1-q3",
+      "stopId": "stop-1",
+      "skill": "Funções",
+      "prompt": "Se $g(x) = 3x^{2}$, qual é $g(2)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "12",
+      "hint": "Eleve a entrada ao quadrado antes da multiplicação externa.",
+      "explanation": "A escala vertical multiplica a altura original por $3$.",
+      "solution": "$g(2) = 3 \\cdot 4 = 12$."
+    },
+    {
+      "id": "stop-1-q4",
+      "stopId": "stop-1",
+      "skill": "Funções",
+      "prompt": "Se $g(x) = f(2x)$, um ponto de $f$ com entrada $6$ aparece em qual entrada de $g$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "3",
+      "hint": "Resolva $2x = 6$.",
+      "explanation": "A escala horizontal funciona pelo inverso do fator interno.",
+      "solution": "$2x = 6$ dá $x = 3$."
+    }
+  ],
+  "stop-2": [
+    {
+      "id": "stop-2-q0",
+      "stopId": "stop-2",
+      "skill": "Limites",
+      "prompt": "Se $f(x) = x + 1$ para $x \\ne 1$, qual é o limite quando $x \\to 1$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "2",
+      "hint": "Acompanhe as saídas perto de $1$.",
+      "explanation": "O buraco no ponto não altera as saídas vizinhas.",
+      "solution": "$x + 1$ tende a $2$."
+    },
+    {
+      "id": "stop-2-q1",
+      "stopId": "stop-2",
+      "skill": "Limites",
+      "prompt": "Os limites laterais em $a$ são $2$ e $3$. O limite bilateral real…",
+      "type": "choice",
+      "options": [
+        "É $2{,}5$",
+        "É $3$",
+        "Não existe",
+        "É $2$"
+      ],
+      "answer": "2",
+      "hint": "Compare as duas aproximações.",
+      "explanation": "Um limite bilateral precisa de um único valor comum aos dois lados.",
+      "solution": "Como $2 \\ne 3$, o limite bilateral não existe."
+    },
+    {
+      "id": "stop-2-q2",
+      "stopId": "stop-2",
+      "skill": "Limites",
+      "prompt": "Saber apenas $f(2) = 7$ determina o limite em $2$?",
+      "type": "choice",
+      "options": [
+        "Sim, sempre é $7$",
+        "Não; precisamos do comportamento próximo de $2$",
+        "Sim, sempre é $2$",
+        "Sim, sempre é $0$"
+      ],
+      "answer": "1",
+      "hint": "Um ponto isolado descreve a vizinhança?",
+      "explanation": "A função pode ter um valor isolado diferente do limite.",
+      "solution": "$f(2)$ sozinho não determina o comportamento próximo de $2$."
+    },
+    {
+      "id": "stop-2-q3",
+      "stopId": "stop-2",
+      "skill": "Limites",
+      "prompt": "Quanto vale o limite de $3x$ quando $x \\to 2$ pela esquerda?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "6",
+      "hint": "Aproxime $x$ de $2$ com valores menores.",
+      "explanation": "$3x$ é contínua, e as saídas se aproximam de $3 \\cdot 2$.",
+      "solution": "O limite lateral é $6$."
+    },
+    {
+      "id": "stop-2-q4",
+      "stopId": "stop-2",
+      "skill": "Limites",
+      "prompt": "A frase “$x \\to a$ pela direita” significa…",
+      "type": "choice",
+      "options": [
+        "$x > a$ se aproximando de $a$",
+        "$x < a$ se aproximando de $a$",
+        "$x = a$ o tempo inteiro",
+        "$f(x)$ necessariamente positiva"
+      ],
+      "answer": "0",
+      "hint": "Direita se refere ao eixo das entradas.",
+      "explanation": "O sinal de $f(x)$ não define o lado da aproximação.",
+      "solution": "As entradas são maiores que $a$ e se aproximam dele."
+    }
+  ],
+  "stop-3": [
+    {
+      "id": "stop-3-q0",
+      "stopId": "stop-3",
+      "skill": "Limites",
+      "prompt": "Calcule $\\lim \\frac{x^2-4}{x-2}$, quando $x \\to 2$.",
+      "type": "numeric",
+      "formula": "",
+      "answer": "4",
+      "hint": "Fatore a diferença de quadrados.",
+      "explanation": "$x^{2} - 4 = (x - 2)(x + 2)$.",
+      "solution": "Para $x \\ne 2$ a expressão é $x + 2$; o limite é $4$."
+    },
+    {
+      "id": "stop-3-q1",
+      "stopId": "stop-3",
+      "skill": "Limites",
+      "prompt": "Calcule $\\lim \\frac{\\sqrt{x}-2}{x-4}$, quando $x \\to 4$.",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0.25",
+      "hint": "Multiplique pelo conjugado $\\sqrt{x} + 2$.",
+      "explanation": "Após racionalizar, a expressão é $\\frac{1}{\\sqrt{x}+2}$, para $x \\ne 4$.",
+      "solution": "O limite é $\\frac{1}{2+2} = \\frac{1}{4} = 0{,}25$."
+    },
+    {
+      "id": "stop-3-q2",
+      "stopId": "stop-3",
+      "skill": "Limites",
+      "prompt": "Na regra do limite do quociente, o limite do denominador deve…",
+      "type": "choice",
+      "options": [
+        "Ser positivo",
+        "Ser igual ao numerador",
+        "Ser diferente de zero",
+        "Ser inteiro"
+      ],
+      "answer": "2",
+      "hint": "Qual operação deixaria de ser definida?",
+      "explanation": "O denominador pode ser negativo; o impedimento é ser zero.",
+      "solution": "Para usar diretamente a regra, seu limite deve ser não nulo."
+    },
+    {
+      "id": "stop-3-q3",
+      "stopId": "stop-3",
+      "skill": "Limites",
+      "prompt": "Se $\\lim f = 2$ e $\\lim g = -1$ no mesmo ponto, quanto vale $\\lim (3f + g)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "5",
+      "hint": "Aplique linearidade aos limites.",
+      "explanation": "Multiplique o primeiro limite por $3$ e depois some o segundo.",
+      "solution": "$3 \\cdot 2 + (-1) = 5$."
+    },
+    {
+      "id": "stop-3-q4",
+      "stopId": "stop-3",
+      "skill": "Limites",
+      "prompt": "Qual conclusão é válida ao obter $\\frac{0}{0}$ por substituição?",
+      "type": "choice",
+      "options": [
+        "O limite é zero",
+        "O limite é infinito",
+        "O limite necessariamente não existe",
+        "Ainda precisamos investigar o limite"
+      ],
+      "answer": "3",
+      "hint": "Indeterminação não é conclusão.",
+      "explanation": "Limites com $\\frac{0}{0}$ podem existir ou não; o símbolo sozinho não decide.",
+      "solution": "É necessário simplificar ou analisar o comportamento por outro método."
+    }
+  ],
+  "stop-4": [
+    {
+      "id": "stop-4-q0",
+      "stopId": "stop-4",
+      "skill": "Continuidade",
+      "prompt": "Se o limite em $1$ é $2$ e $f(1) = 5$, a função é contínua em $1$?",
+      "type": "choice",
+      "options": [
+        "Sim, pois o limite existe",
+        "Não, pois o limite difere do valor",
+        "Sim, pois ambos são finitos",
+        "Não é possível decidir"
+      ],
+      "answer": "1",
+      "hint": "Compare o limite com o valor no ponto.",
+      "explanation": "Existir separadamente não basta: eles precisam coincidir.",
+      "solution": "Não é contínua, porque $2 \\ne 5$."
+    },
+    {
+      "id": "stop-4-q1",
+      "stopId": "stop-4",
+      "skill": "Continuidade",
+      "prompt": "Qual $k$ torna contínua $f(x) = x + 4$ para $x \\ne 2$, com $f(2) = k$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "6",
+      "hint": "Calcule o limite da regra vizinha.",
+      "explanation": "Quando $x \\to 2$, $x + 4$ tende a $6$.",
+      "solution": "O valor no ponto deve ser $k = 6$."
+    },
+    {
+      "id": "stop-4-q2",
+      "stopId": "stop-4",
+      "skill": "Continuidade",
+      "prompt": "Uma descontinuidade com limites laterais finitos, porém diferentes, é…",
+      "type": "choice",
+      "options": [
+        "Removível",
+        "Um salto",
+        "Uma tangente",
+        "Um ponto de máximo"
+      ],
+      "answer": "1",
+      "hint": "Uma mudança em um só ponto consegue unir duas alturas diferentes?",
+      "explanation": "Os lados chegam a alturas distintas, caracterizando salto.",
+      "solution": "É uma descontinuidade de salto."
+    },
+    {
+      "id": "stop-4-q3",
+      "stopId": "stop-4",
+      "skill": "Continuidade",
+      "prompt": "$f(x) = \\frac{1}{x}$ é contínua…",
+      "type": "choice",
+      "options": [
+        "Em todos os reais",
+        "Somente em zero",
+        "Em todos os pontos de seu domínio",
+        "Em nenhum ponto"
+      ],
+      "answer": "2",
+      "hint": "O domínio já exclui a divisão por zero.",
+      "explanation": "Ser contínua no domínio não exige que todo real pertença ao domínio.",
+      "solution": "$\\frac{1}{x}$ é contínua em $\\mathbb{R}\\setminus\\{0\\}$."
+    },
+    {
+      "id": "stop-4-q4",
+      "stopId": "stop-4",
+      "skill": "Continuidade",
+      "prompt": "Se $f$ é contínua em $3$ e $f(3) = 8$, quanto vale $\\lim f(x)$ quando $x \\to 3$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "8",
+      "hint": "Use a definição de continuidade.",
+      "explanation": "Na continuidade, o limite é o valor da função.",
+      "solution": "O limite vale $8$."
+    }
+  ],
+  "stop-5": [
+    {
+      "id": "stop-5-q0",
+      "stopId": "stop-5",
+      "skill": "Continuidade",
+      "prompt": "Se $f$ é contínua em $[0,2]$, $f(0) = -1$ e $f(2) = 3$, podemos garantir…",
+      "type": "choice",
+      "options": [
+        "Exatamente uma raiz",
+        "Pelo menos uma raiz em $(0,2)$",
+        "Que $f(1) = 0$",
+        "Que $f$ é crescente"
+      ],
+      "answer": "1",
+      "hint": "O TVI garante existência, mas não localização exata ou unicidade.",
+      "explanation": "Podem existir várias travessias do zero.",
+      "solution": "Há pelo menos uma raiz no intervalo aberto."
+    },
+    {
+      "id": "stop-5-q1",
+      "stopId": "stop-5",
+      "skill": "Continuidade",
+      "prompt": "Para $x^{2} - 2$ em $[1,2]$, qual é o primeiro ponto médio da bisseção?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "1.5",
+      "hint": "Faça a média das extremidades.",
+      "explanation": "Dividir ao meio significa calcular $\\frac{a + b}{2}$.",
+      "solution": "$\\frac{1 + 2}{2} = 1{,}5$."
+    },
+    {
+      "id": "stop-5-q2",
+      "stopId": "stop-5",
+      "skill": "Continuidade",
+      "prompt": "$f(x) = \\frac{1}{x}$ muda de sinal entre $-1$ e $1$. Por que o TVI não garante uma raiz?",
+      "type": "choice",
+      "options": [
+        "Porque $x$ não é inteiro",
+        "Porque falta continuidade em $[-1,1]$",
+        "Porque não há mudança de sinal",
+        "Porque o TVI exige derivada"
+      ],
+      "answer": "1",
+      "hint": "Confira o que acontece em zero.",
+      "explanation": "A função nem está definida em zero.",
+      "solution": "A hipótese de continuidade no intervalo fechado falha."
+    },
+    {
+      "id": "stop-5-q3",
+      "stopId": "stop-5",
+      "skill": "Continuidade",
+      "prompt": "No exemplo $x^{2} - 2$, após testar $1{,}5$, qual intervalo conserva a mudança de sinal?",
+      "type": "choice",
+      "options": [
+        "$[1; 1,5]$",
+        "$[1,5; 2]$",
+        "$[2; 3]$",
+        "$[0; 0,5]$"
+      ],
+      "answer": "0",
+      "hint": "$f(1) < 0$ e $f(1{,}5) > 0$.",
+      "explanation": "A raiz permanece entre as extremidades de sinais opostos.",
+      "solution": "O novo intervalo é $[1; 1,5]$."
+    },
+    {
+      "id": "stop-5-q4",
+      "stopId": "stop-5",
+      "skill": "Continuidade",
+      "prompt": "Uma função contínua vale $2$ e $8$ nas extremidades. Qual valor é garantido entre elas?",
+      "type": "choice",
+      "options": [
+        "$-1$",
+        "$10$",
+        "$5$",
+        "$20$"
+      ],
+      "answer": "2",
+      "hint": "Escolha um valor entre as duas alturas conhecidas.",
+      "explanation": "O teorema garante todos os valores intermediários, não os externos.",
+      "solution": "O valor $5$ deve ser atingido."
+    }
+  ],
+  "stop-7": [
+    {
+      "id": "stop-7-q0",
+      "stopId": "stop-7",
+      "skill": "Derivadas",
+      "prompt": "Se $f(x) = x^{2}$, qual é $f'(3)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "6",
+      "hint": "Use o resultado obtido pela definição.",
+      "explanation": "A derivada em $a$ é $2a$.",
+      "solution": "$f'(3) = 2 \\cdot 3 = 6$."
+    },
+    {
+      "id": "stop-7-q1",
+      "stopId": "stop-7",
+      "skill": "Derivadas",
+      "prompt": "A função $|x|$ é derivável em zero?",
+      "type": "choice",
+      "options": [
+        "Sim, derivada zero",
+        "Sim, derivada $1$",
+        "Não, as inclinações laterais diferem",
+        "Não, pois não é contínua"
+      ],
+      "answer": "2",
+      "hint": "Observe o canto do gráfico.",
+      "explanation": "As derivadas laterais são $-1$ e $1$.",
+      "solution": "Não existe uma única inclinação limite em zero."
+    },
+    {
+      "id": "stop-7-q2",
+      "stopId": "stop-7",
+      "skill": "Derivadas",
+      "prompt": "Qual afirmação é sempre verdadeira em um ponto interior?",
+      "type": "choice",
+      "options": [
+        "Continuidade implica derivabilidade",
+        "Derivabilidade implica continuidade",
+        "Toda função tem derivada",
+        "A derivada é sempre positiva"
+      ],
+      "answer": "1",
+      "hint": "Uma boa aproximação linear local permite um salto?",
+      "explanation": "Se a derivada existe e é finita, a variação da função tende a zero.",
+      "solution": "Derivabilidade implica continuidade."
+    },
+    {
+      "id": "stop-7-q3",
+      "stopId": "stop-7",
+      "skill": "Derivadas",
+      "prompt": "Para $f(x) = 3x + 1$, qual é a derivada em qualquer ponto?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "3",
+      "hint": "Uma reta tem inclinação constante.",
+      "explanation": "A razão incremental cancela o termo constante.",
+      "solution": "$\\frac{3(a+h)+1-(3a+1)}{h} = 3$."
+    },
+    {
+      "id": "stop-7-q4",
+      "stopId": "stop-7",
+      "skill": "Derivadas",
+      "prompt": "$f'(a)$ representa…",
+      "type": "choice",
+      "options": [
+        "Um número: a inclinação local em $a$",
+        "O valor $f(a)$",
+        "Sempre a função inteira $f'$",
+        "A área sob o gráfico"
+      ],
+      "answer": "0",
+      "hint": "Diferencie a função derivada de sua avaliação num ponto.",
+      "explanation": "Fixar $a$ transforma $f'(a)$ em um valor numérico.",
+      "solution": "$f'(a)$ é a inclinação da tangente no ponto indicado."
+    }
+  ],
+  "stop-8": [
+    {
+      "id": "stop-8-q0",
+      "stopId": "stop-8",
+      "skill": "Derivadas",
+      "prompt": "Qual é a derivada de $x^{5}$?",
+      "type": "choice",
+      "options": [
+        "$5x^{4}$",
+        "$x^{4}$",
+        "$5x^{5}$",
+        "$\\frac{x^{6}}{6}$"
+      ],
+      "answer": "0",
+      "hint": "O expoente faz duas coisas na regra.",
+      "explanation": "Ele multiplica o termo e depois diminui em $1$.",
+      "solution": "$(x^{5})' = 5x^{4}$."
+    },
+    {
+      "id": "stop-8-q1",
+      "stopId": "stop-8",
+      "skill": "Derivadas",
+      "prompt": "Qual é a derivada da função constante $f(x) = 7$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0",
+      "hint": "Uma altura constante varia quanto?",
+      "explanation": "A variação da saída é zero em qualquer intervalo.",
+      "solution": "A derivada de uma constante é $0$."
+    },
+    {
+      "id": "stop-8-q2",
+      "stopId": "stop-8",
+      "skill": "Derivadas",
+      "prompt": "Se $p(x) = 3x^{4} - 2x + 7$, quanto vale $p'(1)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "10",
+      "hint": "Derive termo a termo antes de avaliar.",
+      "explanation": "A derivada é $12x^{3} - 2$.",
+      "solution": "$p'(1) = 12 - 2 = 10$."
+    },
+    {
+      "id": "stop-8-q3",
+      "stopId": "stop-8",
+      "skill": "Derivadas",
+      "prompt": "Para $x \\ne 0$, qual é a derivada de $\\frac{1}{x}$?",
+      "type": "choice",
+      "options": [
+        "$\\frac{1}{x^2}$",
+        "$-\\frac{1}{x^2}$",
+        "$\\ln (x)$",
+        "$-\\frac{1}{x}$"
+      ],
+      "answer": "1",
+      "hint": "Escreva $\\frac{1}{x}$ como $x^{-1}$.",
+      "explanation": "O expoente $-1$ multiplica e passa a $-2$.",
+      "solution": "$(x^{-1})' = -x^{-2} = -\\frac{1}{x^2}$."
+    },
+    {
+      "id": "stop-8-q4",
+      "stopId": "stop-8",
+      "skill": "Derivadas",
+      "prompt": "Quanto vale a derivada de $\\sqrt{x}$ em $x = 4$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0.25",
+      "hint": "Use $\\frac{1}{2\\sqrt{x}}$.",
+      "explanation": "$\\sqrt{4}$ é $2$, e o denominador fica $4$.",
+      "solution": "A derivada vale $\\frac{1}{4} = 0{,}25$."
+    }
+  ],
+  "stop-9": [
+    {
+      "id": "stop-9-q0",
+      "stopId": "stop-9",
+      "skill": "Derivadas",
+      "prompt": "Qual fórmula expressa a regra do produto?",
+      "type": "choice",
+      "options": [
+        "$u'v'$",
+        "$u'v + uv'$",
+        "$u' + v'$",
+        "$(u + v)'$"
+      ],
+      "answer": "1",
+      "hint": "Há uma contribuição de cada fator.",
+      "explanation": "Em cada termo apenas um fator é derivado.",
+      "solution": "$(uv)' = u'v + uv'$."
+    },
+    {
+      "id": "stop-9-q1",
+      "stopId": "stop-9",
+      "skill": "Derivadas",
+      "prompt": "Se $p(x) = x^{2}(x + 1)$, quanto vale $p'(2)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "16",
+      "hint": "Use $3x^{2} + 2x$.",
+      "explanation": "Avalie a derivada simplificada em $x = 2$.",
+      "solution": "$3 \\cdot 4 + 4 = 16$."
+    },
+    {
+      "id": "stop-9-q2",
+      "stopId": "stop-9",
+      "skill": "Derivadas",
+      "prompt": "Em um instante, $u = 2$, $v = 3$, $u' = 1$ e $v' = 4$. Quanto vale $(uv)'$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "11",
+      "hint": "Some $u'v$ e $uv'$.",
+      "explanation": "A variação total recebe contribuição de ambos os fatores.",
+      "solution": "$1 \\cdot 3 + 2 \\cdot 4 = 11$."
+    },
+    {
+      "id": "stop-9-q3",
+      "stopId": "stop-9",
+      "skill": "Derivadas",
+      "prompt": "Um aluno escreveu $(x^{2} \\sin x)' = 2x \\cos x$. Qual termo correto deve substituir essa resposta?",
+      "type": "choice",
+      "options": [
+        "$2x \\sin x + x^{2} \\cos x$",
+        "$2x \\cos x + x^{2} \\sin x$",
+        "$x^{2} \\cos x$",
+        "$2x \\sin x$"
+      ],
+      "answer": "0",
+      "hint": "Ele multiplicou as derivadas em vez de somar contribuições.",
+      "explanation": "Mantenha o outro fator intacto em cada uma das duas parcelas.",
+      "solution": "O correto é $2x \\sin x + x^{2} \\cos x$."
+    },
+    {
+      "id": "stop-9-q4",
+      "stopId": "stop-9",
+      "skill": "Derivadas",
+      "prompt": "Para $A(x) = x(x + 2)$, qual é $A'(3)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "8",
+      "hint": "Você pode usar a regra do produto ou expandir.",
+      "explanation": "$A(x) = x^{2} + 2x$, logo $A'(x) = 2x + 2$.",
+      "solution": "$A'(3) = 6 + 2 = 8$."
+    }
+  ],
+  "stop-10": [
+    {
+      "id": "stop-10-q0",
+      "stopId": "stop-10",
+      "skill": "Derivadas",
+      "prompt": "Qual numerador pertence à regra de $(\\frac{u}{v})'$?",
+      "type": "choice",
+      "options": [
+        "$uv' - u'v$",
+        "$u'v - uv'$",
+        "$u'v'$",
+        "$u' + v'$"
+      ],
+      "answer": "1",
+      "hint": "Preserve a ordem: derivada de cima primeiro.",
+      "explanation": "Inverter a subtração muda o sinal.",
+      "solution": "O numerador correto é $u'v - uv'$."
+    },
+    {
+      "id": "stop-10-q1",
+      "stopId": "stop-10",
+      "skill": "Derivadas",
+      "prompt": "Qual é o denominador da regra do quociente?",
+      "type": "choice",
+      "options": [
+        "$v$",
+        "$v'$",
+        "$v^{2}$",
+        "$u^{2}$"
+      ],
+      "answer": "2",
+      "hint": "Lembre-se do quadrado do denominador original.",
+      "explanation": "Não é a derivada do denominador.",
+      "solution": "O denominador é $v^{2}$."
+    },
+    {
+      "id": "stop-10-q2",
+      "stopId": "stop-10",
+      "skill": "Derivadas",
+      "prompt": "Se $q(x) = \\frac{x^2+1}{x}$, qual é $q'(2)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0.75",
+      "hint": "Use $q'(x) = 1 - \\frac{1}{x^2}$.",
+      "explanation": "Em $x = 2$, o termo subtraído é $\\frac{1}{4}$.",
+      "solution": "$q'(2) = 1 - 0,25 = 0{,}75$."
+    },
+    {
+      "id": "stop-10-q3",
+      "stopId": "stop-10",
+      "skill": "Derivadas",
+      "prompt": "Qual valor é excluído do domínio de $\\frac{x}{x+1}$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "-1",
+      "hint": "Onde o denominador zera?",
+      "explanation": "Resolva $x + 1 = 0$.",
+      "solution": "$x = -1$ é excluído."
+    },
+    {
+      "id": "stop-10-q4",
+      "stopId": "stop-10",
+      "skill": "Derivadas",
+      "prompt": "Para $f(x) = \\frac{x}{x+1}$, qual é $f'(1)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0.25",
+      "hint": "A regra simplifica para $\\frac{1}{(x+1)^2}$.",
+      "explanation": "O numerador é $(x + 1) - x = 1$.",
+      "solution": "$f'(1) = \\frac{1}{4} = 0{,}25$."
+    }
+  ],
+  "stop-11": [
+    {
+      "id": "stop-11-q0",
+      "stopId": "stop-11",
+      "skill": "Derivadas",
+      "prompt": "Qual é a derivada de $(3x + 1)^{2}$?",
+      "type": "choice",
+      "options": [
+        "$2(3x + 1)$",
+        "$6(3x + 1)$",
+        "$\\frac{(3x + 1)^{3}}{3}$",
+        "$6x$"
+      ],
+      "answer": "1",
+      "hint": "A derivada interna também participa.",
+      "explanation": "A camada externa fornece $2(3x + 1)$; a interna fornece $3$.",
+      "solution": "Multiplicando, obtemos $6(3x + 1)$."
+    },
+    {
+      "id": "stop-11-q1",
+      "stopId": "stop-11",
+      "skill": "Derivadas",
+      "prompt": "Quanto vale a derivada de $(3x + 1)^{2}$ em $x = 1$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "24",
+      "hint": "Avalie $6(3x + 1)$.",
+      "explanation": "A entrada interna vale $4$ nesse ponto.",
+      "solution": "$6 \\cdot 4 = 24$."
+    },
+    {
+      "id": "stop-11-q2",
+      "stopId": "stop-11",
+      "skill": "Derivadas",
+      "prompt": "Em $\\sin (x^{2})$, qual é a função interna?",
+      "type": "choice",
+      "options": [
+        "$\\sin x$",
+        "$\\cos x$",
+        "$x^{2}$",
+        "$2x$"
+      ],
+      "answer": "2",
+      "hint": "Identifique o que é calculado antes do seno.",
+      "explanation": "Primeiro elevamos $x$ ao quadrado; depois calculamos o seno.",
+      "solution": "A função interna é $u(x) = x^{2}$."
+    },
+    {
+      "id": "stop-11-q3",
+      "stopId": "stop-11",
+      "skill": "Derivadas",
+      "prompt": "Qual é a derivada de $\\sin (x^{2})$?",
+      "type": "choice",
+      "options": [
+        "$\\cos (x^{2})$",
+        "$2x \\cos (x^{2})$",
+        "$2x \\sin (x^{2})$",
+        "$\\cos (2x)$"
+      ],
+      "answer": "1",
+      "hint": "Derive o seno e multiplique pela derivada de $x^{2}$.",
+      "explanation": "A regra da cadeia conserva $x^{2}$ dentro do cosseno.",
+      "solution": "A derivada é $2x \\cos (x^{2})$."
+    },
+    {
+      "id": "stop-11-q4",
+      "stopId": "stop-11",
+      "skill": "Derivadas",
+      "prompt": "Se $F'(u) = 5$ no valor interno considerado e $u'(x) = 2$, quanto vale a derivada da composição nesse ponto?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "10",
+      "hint": "As taxas de etapas sucessivas se multiplicam.",
+      "explanation": "Use $F'(u(x)) \\cdot u'(x)$.",
+      "solution": "$5 \\cdot 2 = 10$."
+    }
+  ],
+  "stop-12": [
+    {
+      "id": "stop-12-q0",
+      "stopId": "stop-12",
+      "skill": "Derivadas",
+      "prompt": "Qual é a derivada de $\\cos x$, com $x$ em radianos?",
+      "type": "choice",
+      "options": [
+        "$\\sin x$",
+        "$-\\sin x$",
+        "$\\cos x$",
+        "$-\\cos x$"
+      ],
+      "answer": "1",
+      "hint": "O sinal negativo é parte da regra.",
+      "explanation": "Ao sair de zero para a direita, $\\cos x$ começa a diminuir.",
+      "solution": "$(\\cos x)' = -\\sin x$."
+    },
+    {
+      "id": "stop-12-q1",
+      "stopId": "stop-12",
+      "skill": "Derivadas",
+      "prompt": "Qual é a derivada de $e^{3x}$?",
+      "type": "choice",
+      "options": [
+        "$e^{3x}$",
+        "$3e^{3x}$",
+        "$3e^{x}$",
+        "$\\frac{e^{3x}}{3}$"
+      ],
+      "answer": "1",
+      "hint": "Use a taxa da função interna $3x$.",
+      "explanation": "A exponencial permanece, multiplicada pela derivada interna.",
+      "solution": "A derivada é $3e^{3x}$."
+    },
+    {
+      "id": "stop-12-q2",
+      "stopId": "stop-12",
+      "skill": "Derivadas",
+      "prompt": "Quanto vale $(\\ln x)'$ em $x = 2$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0.5",
+      "hint": "A derivada de $\\ln x$ é $\\frac{1}{x}$.",
+      "explanation": "Substitua $x = 2$ na derivada.",
+      "solution": "$\\frac{1}{2} = 0{,}5$."
+    },
+    {
+      "id": "stop-12-q3",
+      "stopId": "stop-12",
+      "skill": "Derivadas",
+      "prompt": "Para $f(x) = \\sin x$, quanto vale $f'(0)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "1",
+      "hint": "A derivada do seno é o cosseno.",
+      "explanation": "$\\cos 0 = 1$.",
+      "solution": "$f'(0) = \\cos 0 = 1$."
+    },
+    {
+      "id": "stop-12-q4",
+      "stopId": "stop-12",
+      "skill": "Derivadas",
+      "prompt": "Para $x$ real, qual é a derivada de $\\ln (x^{2} + 1)$?",
+      "type": "choice",
+      "options": [
+        "$\\frac{1}{x^2+1}$",
+        "$\\frac{2x}{x^2+1}$",
+        "$\\ln (2x)$",
+        "$2x \\ln (x^{2} + 1)$"
+      ],
+      "answer": "1",
+      "hint": "Use $\\frac{u'}{u}$; o argumento é sempre positivo.",
+      "explanation": "A função interna $x^{2} + 1$ tem derivada $2x$.",
+      "solution": "A derivada é $\\frac{2x}{x^2+1}$."
+    }
+  ],
+  "stop-13": [
+    {
+      "id": "stop-13-q0",
+      "stopId": "stop-13",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Se $f'$ é negativa em todo um intervalo, $f$ é…",
+      "type": "choice",
+      "options": [
+        "Crescente",
+        "Decrescente",
+        "Constante",
+        "Sempre negativa"
+      ],
+      "answer": "1",
+      "hint": "Sinal da taxa não é o mesmo que sinal da altura.",
+      "explanation": "Uma derivada negativa indica que a função diminui quando $x$ aumenta.",
+      "solution": "A função é decrescente nesse intervalo."
+    },
+    {
+      "id": "stop-13-q1",
+      "stopId": "stop-13",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Para $A(x) = x(10 - x)$, qual $x$ maximiza a área?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "5",
+      "hint": "Resolva $A'(x) = 0$ e observe os sinais.",
+      "explanation": "$A'(x) = 10 - 2x$ muda de positivo para negativo em $5$.",
+      "solution": "A área é máxima em $x = 5$."
+    },
+    {
+      "id": "stop-13-q2",
+      "stopId": "stop-13",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Qual é a área máxima desse retângulo de perímetro $20$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "25",
+      "hint": "Os dois lados valem $5$ no máximo.",
+      "explanation": "Calcule a área, não o perímetro.",
+      "solution": "$5 \\cdot 5 = 25$ unidades quadradas."
+    },
+    {
+      "id": "stop-13-q3",
+      "stopId": "stop-13",
+      "skill": "Aplicações de derivadas",
+      "prompt": "$f'(a) = 0$ garante um máximo ou mínimo?",
+      "type": "choice",
+      "options": [
+        "Sim, sempre máximo",
+        "Sim, sempre mínimo",
+        "Não; $x^{3}$ em zero é um contraexemplo",
+        "Sim, se $f(a) = 0$"
+      ],
+      "answer": "2",
+      "hint": "Observe se a derivada troca de sinal.",
+      "explanation": "Em $x^{3}$, a derivada é $3x^{2}$ e não troca de sinal em zero.",
+      "solution": "Um ponto estacionário pode não ser extremo."
+    },
+    {
+      "id": "stop-13-q4",
+      "stopId": "stop-13",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Para buscar extremos absolutos de uma função contínua em $[a,b]$, é preciso comparar…",
+      "type": "choice",
+      "options": [
+        "Só os zeros da função",
+        "Pontos críticos e extremidades",
+        "Só as extremidades",
+        "Somente onde $f' > 0$"
+      ],
+      "answer": "1",
+      "hint": "O maior valor pode estar na borda.",
+      "explanation": "O teorema de existência de extremos não determina onde eles estão.",
+      "solution": "Compare valores em pontos críticos interiores e nas extremidades."
+    }
+  ],
+  "stop-14": [
+    {
+      "id": "stop-14-q0",
+      "stopId": "stop-14",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Se $f'' > 0$ em um intervalo, o gráfico é…",
+      "type": "choice",
+      "options": [
+        "Côncavo para cima",
+        "Côncavo para baixo",
+        "Sempre crescente",
+        "Sempre positivo"
+      ],
+      "answer": "0",
+      "hint": "A segunda derivada descreve a variação da inclinação.",
+      "explanation": "A inclinação cresce, mas pode ainda ser negativa.",
+      "solution": "O gráfico é côncavo para cima."
+    },
+    {
+      "id": "stop-14-q1",
+      "stopId": "stop-14",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Para $f(x) = x^{3} - 3x$, qual é a altura do máximo local em $x = -1$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "2",
+      "hint": "Substitua $-1$ na função original.",
+      "explanation": "Avalie $(-1)^{3} - 3(-1)$.",
+      "solution": "$-1 + 3 = 2$."
+    },
+    {
+      "id": "stop-14-q2",
+      "stopId": "stop-14",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Para $f(x) = x^{3} - 3x$, a inflexão ocorre em qual $x$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0",
+      "hint": "A segunda derivada é $6x$.",
+      "explanation": "Ela muda de negativa para positiva ao atravessar zero.",
+      "solution": "A inflexão ocorre em $x = 0$."
+    },
+    {
+      "id": "stop-14-q3",
+      "stopId": "stop-14",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Por que $f''(0) = 0$ em $x^{4}$ não implica inflexão?",
+      "type": "choice",
+      "options": [
+        "Porque $f(0) = 0$",
+        "Porque $12x^{2}$ não muda de sinal",
+        "Porque $x^{4}$ não tem derivada",
+        "Porque zero não é real"
+      ],
+      "answer": "1",
+      "hint": "Compare a concavidade nos dois lados.",
+      "explanation": "$12x^{2}$ é positiva para $x \\ne 0$ de ambos os lados.",
+      "solution": "Não há mudança de concavidade."
+    },
+    {
+      "id": "stop-14-q4",
+      "stopId": "stop-14",
+      "skill": "Aplicações de derivadas",
+      "prompt": "Qual ponto pode ser crítico mesmo com derivada inexistente?",
+      "type": "choice",
+      "options": [
+        "$x = 0$ em $|x|$",
+        "$x = 0$ em $\\frac{1}{x}$",
+        "Qualquer ponto fora do domínio",
+        "Nenhum"
+      ],
+      "answer": "0",
+      "hint": "O ponto precisa pertencer ao domínio.",
+      "explanation": "$|x|$ está definida em zero e tem um canto nesse ponto.",
+      "solution": "Zero é um ponto crítico de $|x|$; já $\\frac{1}{x}$ não está definida ali."
+    }
+  ],
+  "stop-15": [
+    {
+      "id": "stop-15-q0",
+      "stopId": "stop-15",
+      "skill": "Integrais",
+      "prompt": "Em $[0,2]$ com $n = 4$ faixas iguais, qual é $\\Delta x$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0.5",
+      "hint": "Divida o comprimento do intervalo pelo número de faixas.",
+      "explanation": "O comprimento é $2 - 0 = 2$.",
+      "solution": "$\\Delta x = \\frac{2}{4} = 0{,}5$."
+    },
+    {
+      "id": "stop-15-q1",
+      "stopId": "stop-15",
+      "skill": "Integrais",
+      "prompt": "Para $f(x) = x$ em $[0,2]$, com duas faixas e extremidades direitas, qual é a soma?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "3",
+      "hint": "As alturas são $f(1)$ e $f(2)$.",
+      "explanation": "Cada retângulo tem largura $1$.",
+      "solution": "$S = 1 \\cdot 1 + 2 \\cdot 1 = 3$."
+    },
+    {
+      "id": "stop-15-q2",
+      "stopId": "stop-15",
+      "skill": "Integrais",
+      "prompt": "Para uma função crescente positiva, retângulos pela esquerda geralmente…",
+      "type": "choice",
+      "options": [
+        "Superestimam a área",
+        "Subestimam a área",
+        "Sempre dão área exata",
+        "Dão área negativa"
+      ],
+      "answer": "1",
+      "hint": "A altura é escolhida no começo de cada intervalo.",
+      "explanation": "Em uma função crescente, o restante da curva fica acima dessa altura.",
+      "solution": "A soma pela esquerda subestima a área."
+    },
+    {
+      "id": "stop-15-q3",
+      "stopId": "stop-15",
+      "skill": "Integrais",
+      "prompt": "Qual é a área exata sob $f(x) = x$ em $[0,2]$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "2",
+      "hint": "Reconheça um triângulo.",
+      "explanation": "Use base vezes altura dividido por $2$.",
+      "solution": "A área é $2 \\cdot \\frac{2}{2} = 2$."
+    },
+    {
+      "id": "stop-15-q4",
+      "stopId": "stop-15",
+      "skill": "Integrais",
+      "prompt": "O fator $\\Delta x$ em uma soma de Riemann representa…",
+      "type": "choice",
+      "options": [
+        "A altura",
+        "A largura de cada faixa",
+        "O número de retângulos",
+        "A derivada"
+      ],
+      "answer": "1",
+      "hint": "Cada parcela deve ser altura vezes largura.",
+      "explanation": "$f(x_{i}^{*})$ fornece a altura; falta a dimensão horizontal.",
+      "solution": "$\\Delta x$ é a largura de cada faixa."
+    }
+  ],
+  "stop-16": [
+    {
+      "id": "stop-16-q0",
+      "stopId": "stop-16",
+      "skill": "Integrais",
+      "prompt": "Quanto vale a integral de $x$ em $[-1,1]$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "0",
+      "hint": "Compare as contribuições dos dois lados do eixo vertical.",
+      "explanation": "As áreas têm o mesmo módulo e sinais opostos.",
+      "solution": "$-\\frac{1}{2} + \\frac{1}{2} = 0$."
+    },
+    {
+      "id": "stop-16-q1",
+      "stopId": "stop-16",
+      "skill": "Integrais",
+      "prompt": "Qual é a área geométrica entre $y = x$ e o eixo $x$ em $[-1,1]$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "1",
+      "hint": "A área geométrica não cancela regiões negativas.",
+      "explanation": "Some as áreas dos dois triângulos.",
+      "solution": "$\\frac{1}{2} + \\frac{1}{2} = 1$."
+    },
+    {
+      "id": "stop-16-q2",
+      "stopId": "stop-16",
+      "skill": "Integrais",
+      "prompt": "Se a integral de $a$ até $b$ vale $7$, quanto vale a de $b$ até $a$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "-7",
+      "hint": "Inverter a orientação troca o sinal.",
+      "explanation": "As mesmas contribuições são percorridas na direção contrária.",
+      "solution": "O valor é $-7$."
+    },
+    {
+      "id": "stop-16-q3",
+      "stopId": "stop-16",
+      "skill": "Integrais",
+      "prompt": "Uma integral definida negativa significa que…",
+      "type": "choice",
+      "options": [
+        "A função é negativa em todo ponto",
+        "A contribuição negativa supera a positiva",
+        "A integral não existe",
+        "A área geométrica é negativa"
+      ],
+      "answer": "1",
+      "hint": "O resultado é um balanço das contribuições.",
+      "explanation": "Podem existir trechos positivos, desde que as contribuições negativas predominem.",
+      "solution": "O total com sinal é negativo."
+    },
+    {
+      "id": "stop-16-q4",
+      "stopId": "stop-16",
+      "skill": "Integrais",
+      "prompt": "Se $\\int_{0}^{1} f = 2$ e $\\int_{1}^{3} f = 5$, qual é $\\int_{0}^{3} f$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "7",
+      "hint": "Use a aditividade em intervalos adjacentes.",
+      "explanation": "As contribuições dos dois trechos se somam.",
+      "solution": "$2 + 5 = 7$."
+    }
+  ],
+  "stop-17": [
+    {
+      "id": "stop-17-q0",
+      "stopId": "stop-17",
+      "skill": "Integrais",
+      "prompt": "Quanto vale $\\int_{1}^{3} 2x \\,\\mathrm{d}x$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "8",
+      "hint": "Use uma primitiva $x^{2}$.",
+      "explanation": "Avalie final menos inicial.",
+      "solution": "$3^{2} - 1^{2} = 8$."
+    },
+    {
+      "id": "stop-17-q1",
+      "stopId": "stop-17",
+      "skill": "Integrais",
+      "prompt": "Se $A(x) = \\int_{0}^{x} \\cos t \\,\\mathrm{d}t$, qual é $A'(x)$?",
+      "type": "choice",
+      "options": [
+        "$\\sin x$",
+        "$\\cos x$",
+        "$-\\sin x$",
+        "$x \\cos x$"
+      ],
+      "answer": "1",
+      "hint": "Use a primeira parte do Teorema Fundamental.",
+      "explanation": "A taxa do acumulado é o integrando na borda superior.",
+      "solution": "$A'(x) = \\cos x$."
+    },
+    {
+      "id": "stop-17-q2",
+      "stopId": "stop-17",
+      "skill": "Integrais",
+      "prompt": "Quanto vale a derivada de $\\int_{0}^{x^2} t \\,\\mathrm{d}t$ em $x = 2$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "16",
+      "hint": "Use o integrando em $x^{2}$ e a derivada de $x^{2}$.",
+      "explanation": "A derivada é $x^{2} \\cdot 2x = 2x^{3}$.",
+      "solution": "Em $x = 2$, o valor é $2 \\cdot 8 = 16$."
+    },
+    {
+      "id": "stop-17-q3",
+      "stopId": "stop-17",
+      "skill": "Integrais",
+      "prompt": "Qual é a ordem correta ao usar uma primitiva $F$?",
+      "type": "choice",
+      "options": [
+        "$F(a) - F(b)$",
+        "$F(b) - F(a)$",
+        "$F(a) + F(b)$",
+        "$F'(b) - F'(a)$"
+      ],
+      "answer": "1",
+      "hint": "A variação é final menos inicial.",
+      "explanation": "A integral mede a variação da primitiva.",
+      "solution": "Use $F(b) - F(a)$."
+    },
+    {
+      "id": "stop-17-q4",
+      "stopId": "stop-17",
+      "skill": "Integrais",
+      "prompt": "A constante de integração altera o valor de uma integral definida calculada por primitivas?",
+      "type": "choice",
+      "options": [
+        "Sim, sempre",
+        "Não, pois se cancela",
+        "Só se for positiva",
+        "Impede usar o teorema"
+      ],
+      "answer": "1",
+      "hint": "Subtraia $[F(b) + C] - [F(a) + C]$.",
+      "explanation": "O mesmo $C$ aparece com sinais opostos.",
+      "solution": "A constante cancela e o valor não muda."
+    }
+  ],
+  "stop-18": [
+    {
+      "id": "stop-18-q0",
+      "stopId": "stop-18",
+      "skill": "Integrais",
+      "prompt": "Qual é a família de primitivas de $2x$?",
+      "type": "choice",
+      "options": [
+        "$2 + C$",
+        "$x^{2} + C$",
+        "$2x^{2} + C$",
+        "$x + C$"
+      ],
+      "answer": "1",
+      "hint": "Qual expressão tem derivada $2x$?",
+      "explanation": "Derivar $x^{2}$ devolve $2x$, e a constante desaparece.",
+      "solution": "As primitivas são $x^{2} + C$."
+    },
+    {
+      "id": "stop-18-q1",
+      "stopId": "stop-18",
+      "skill": "Integrais",
+      "prompt": "Se $F'(x) = 2x$ e $F(0) = 3$, qual é $C$ em $F(x) = x^{2} + C$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "3",
+      "hint": "Substitua zero na primitiva.",
+      "explanation": "$F(0) = C$.",
+      "solution": "A condição inicial fornece $C = 3$."
+    },
+    {
+      "id": "stop-18-q2",
+      "stopId": "stop-18",
+      "skill": "Integrais",
+      "prompt": "Por que $\\int x^{-1} \\,\\mathrm{d}x$ não usa $\\frac{x^{n+1}}{n+1}$?",
+      "type": "choice",
+      "options": [
+        "Porque $x$ é negativo",
+        "Porque $n + 1$ seria zero",
+        "Porque não existe primitiva",
+        "Porque toda integral é definida"
+      ],
+      "answer": "1",
+      "hint": "Coloque $n = -1$ no denominador da regra.",
+      "explanation": "A regra exclui o caso que produziria divisão por zero.",
+      "solution": "Para $n = -1$ usamos $\\ln |x| + C$."
+    },
+    {
+      "id": "stop-18-q3",
+      "stopId": "stop-18",
+      "skill": "Integrais",
+      "prompt": "Qual é uma primitiva de $\\cos x$?",
+      "type": "choice",
+      "options": [
+        "$-\\sin x$",
+        "$\\sin x$",
+        "$-\\cos x$",
+        "$\\ln x$"
+      ],
+      "answer": "1",
+      "hint": "Derive as alternativas mentalmente.",
+      "explanation": "A derivada do seno é o cosseno.",
+      "solution": "Uma primitiva é $\\sin x$."
+    },
+    {
+      "id": "stop-18-q4",
+      "stopId": "stop-18",
+      "skill": "Integrais",
+      "prompt": "Se $F(x) = x^{3} - 2x + 5$, qual é $F(2)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "9",
+      "hint": "Avalie a função, mantendo a constante.",
+      "explanation": "$2^{3} - 2 \\cdot 2 + 5 = 8 - 4 + 5$.",
+      "solution": "$F(2) = 9$."
+    }
+  ],
+  "stop-19": [
+    {
+      "id": "stop-19-q0",
+      "stopId": "stop-19",
+      "skill": "Integrais",
+      "prompt": "Em $\\int 2x(x^{2} + 1)^{3} \\,\\mathrm{d}x$, qual substituição é mais direta?",
+      "type": "choice",
+      "options": [
+        "$u = x^{2} + 1$",
+        "$u = 3$",
+        "$u = 2x + 1$",
+        "$u = x^{3}$"
+      ],
+      "answer": "0",
+      "hint": "Procure a expressão cuja derivada aparece multiplicando.",
+      "explanation": "A derivada de $x^{2} + 1$ é $2x$.",
+      "solution": "Escolha $u = x^{2} + 1$."
+    },
+    {
+      "id": "stop-19-q1",
+      "stopId": "stop-19",
+      "skill": "Integrais",
+      "prompt": "Se $u = x^{2} + 1$, qual é $du$?",
+      "type": "choice",
+      "options": [
+        "$x dx$",
+        "$2x dx$",
+        "$dx$",
+        "$2 dx$"
+      ],
+      "answer": "1",
+      "hint": "Derive $u$ com relação a $x$.",
+      "explanation": "$\\frac{du}{dx} = 2x$.",
+      "solution": "Logo $du = 2x dx$."
+    },
+    {
+      "id": "stop-19-q2",
+      "stopId": "stop-19",
+      "skill": "Integrais",
+      "prompt": "Ao transformar $\\int_{0}^{1} 2x(x^{2} + 1) \\,\\mathrm{d}x$ com $u = x^{2} + 1$, o limite superior vira…",
+      "type": "numeric",
+      "formula": "",
+      "answer": "2",
+      "hint": "Avalie $u$ na extremidade $x = 1$.",
+      "explanation": "$u(1) = 1^{2} + 1$.",
+      "solution": "O limite superior é $2$."
+    },
+    {
+      "id": "stop-19-q3",
+      "stopId": "stop-19",
+      "skill": "Integrais",
+      "prompt": "Quanto vale $\\int_{0}^{1} 2x(x^{2} + 1) \\,\\mathrm{d}x$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "1.5",
+      "hint": "A substituição produz $\\int_{1}^{2} u \\,\\mathrm{d}u$.",
+      "explanation": "Use $\\frac{u^{2}}{2}$ e avalie entre $1$ e $2$.",
+      "solution": "$\\frac{4 - 1}{2} = 1{,}5$."
+    },
+    {
+      "id": "stop-19-q4",
+      "stopId": "stop-19",
+      "skill": "Integrais",
+      "prompt": "Qual é uma primitiva de $\\frac{2x}{x^2+1}$?",
+      "type": "choice",
+      "options": [
+        "$\\ln (x^{2} + 1)$",
+        "$\\frac{1}{x^2+1}$",
+        "$2 \\ln x$",
+        "$(x^{2} + 1)^{2}$"
+      ],
+      "answer": "0",
+      "hint": "Com $u = x^{2} + 1$, aparece $\\frac{du}{u}$.",
+      "explanation": "O argumento é positivo para todo $x$ real.",
+      "solution": "A primitiva é $\\ln (x^{2} + 1)$; sua derivada é $\\frac{2x}{x^2+1}$."
+    }
+  ],
+  "stop-20": [
+    {
+      "id": "stop-20-q0",
+      "stopId": "stop-20",
+      "skill": "Integrais",
+      "prompt": "Entre $x$ e $x^{2}$, em $0 < x < 1$, qual curva fica acima?",
+      "type": "choice",
+      "options": [
+        "$x^{2}$",
+        "$x$",
+        "As duas coincidem",
+        "Nenhuma"
+      ],
+      "answer": "1",
+      "hint": "Teste uma entrada entre zero e um.",
+      "explanation": "Em $x = 0{,}5$ temos $x = 0{,}5$ e $x^{2} = 0{,}25$.",
+      "solution": "A reta $y = x$ fica acima."
+    },
+    {
+      "id": "stop-20-q1",
+      "stopId": "stop-20",
+      "skill": "Integrais",
+      "prompt": "Qual é a área entre $y = 3$ e $y = 1$ em $[0,2]$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "4",
+      "hint": "A altura constante é a diferença das curvas.",
+      "explanation": "Altura $2$, largura $2$.",
+      "solution": "A área é $(3 - 1) \\cdot 2 = 4$."
+    },
+    {
+      "id": "stop-20-q2",
+      "stopId": "stop-20",
+      "skill": "Integrais",
+      "prompt": "Se as curvas se cruzam dentro do intervalo e trocam de posição, devemos…",
+      "type": "choice",
+      "options": [
+        "Ignorar o cruzamento",
+        "Somar as integrais das funções",
+        "Separar os intervalos ou usar módulo",
+        "Aceitar uma área negativa"
+      ],
+      "answer": "2",
+      "hint": "Mantenha a distância vertical não negativa.",
+      "explanation": "A curva superior deixa de ser a mesma após o cruzamento.",
+      "solution": "Divida nos cruzamentos ou use $|f - g|$."
+    },
+    {
+      "id": "stop-20-q3",
+      "stopId": "stop-20",
+      "skill": "Integrais",
+      "prompt": "Qual é o maior $x$ de interseção entre $y = x$ e $y = x^{2}$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "1",
+      "hint": "Resolva $x^{2} - x = 0$.",
+      "explanation": "Fatore como $x(x - 1)$.",
+      "solution": "As interseções ocorrem em $0$ e $1$; a maior é $1$."
+    },
+    {
+      "id": "stop-20-q4",
+      "stopId": "stop-20",
+      "skill": "Integrais",
+      "prompt": "Qual expressão calcula a área entre $x$ e $x^{2}$ em $[0,1]$?",
+      "type": "choice",
+      "options": [
+        "$\\int_{0}^{1} (x^{2} - x) \\,\\mathrm{d}x$",
+        "$\\int_{0}^{1} (x + x^{2}) \\,\\mathrm{d}x$",
+        "$\\int_{0}^{1} (x - x^{2}) \\,\\mathrm{d}x$",
+        "$\\int_{0}^{1} x^{3} \\,\\mathrm{d}x$"
+      ],
+      "answer": "2",
+      "hint": "Subtraia a curva inferior da superior.",
+      "explanation": "Nesse intervalo, $x \\ge x^{2}$.",
+      "solution": "A área é $\\int_{0}^{1} (x - x^{2}) \\,\\mathrm{d}x = \\frac{1}{6}$."
+    }
+  ],
+  "stop-21": [
+    {
+      "id": "stop-21-q0",
+      "stopId": "stop-21",
+      "skill": "Integrais",
+      "prompt": "Para $v(t) = 2t - 2$, em qual instante a vagoneta muda de sentido?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "1",
+      "hint": "Procure onde a velocidade zera e muda de sinal.",
+      "explanation": "$2t - 2 = 0$ dá $t = 1$.",
+      "solution": "A velocidade passa de negativa para positiva em $t = 1$."
+    },
+    {
+      "id": "stop-21-q1",
+      "stopId": "stop-21",
+      "skill": "Integrais",
+      "prompt": "Com $s(0) = 0$ e $v(t) = 2t - 2$, qual é $s(3)$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "3",
+      "hint": "Integre a velocidade e use a posição inicial.",
+      "explanation": "$s(t) = t^{2} - 2t$.",
+      "solution": "$s(3) = 9 - 6 = 3$."
+    },
+    {
+      "id": "stop-21-q2",
+      "stopId": "stop-21",
+      "skill": "Integrais",
+      "prompt": "Qual é a distância percorrida entre $t = 0$ e $t = 3$ nesse modelo?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "5",
+      "hint": "Separe o intervalo em $t = 1$ e use módulos.",
+      "explanation": "Os deslocamentos dos trechos são $-1$ e $4$.",
+      "solution": "A distância é $|-1| + |4| = 5$."
+    },
+    {
+      "id": "stop-21-q3",
+      "stopId": "stop-21",
+      "skill": "Integrais",
+      "prompt": "Qual é a aceleração se $v(t) = 2t - 2$?",
+      "type": "numeric",
+      "formula": "",
+      "answer": "2",
+      "hint": "Aceleração é a derivada da velocidade.",
+      "explanation": "Derive a função linear.",
+      "solution": "$a(t) = v'(t) = 2$."
+    },
+    {
+      "id": "stop-21-q4",
+      "stopId": "stop-21",
+      "skill": "Integrais",
+      "prompt": "Qual afirmação combina corretamente taxa e acumulação?",
+      "type": "choice",
+      "options": [
+        "A integral da velocidade é sempre distância",
+        "A derivada da posição é a velocidade",
+        "A posição é a derivada da aceleração",
+        "Velocidade negativa implica posição negativa"
+      ],
+      "answer": "1",
+      "hint": "Pense no que cada operação mede.",
+      "explanation": "O sinal da velocidade indica sentido do movimento, não necessariamente o sinal da posição.",
+      "solution": "A derivada da posição é a velocidade; sua integral dá deslocamento."
+    }
+  ]
+}

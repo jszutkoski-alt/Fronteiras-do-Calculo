@@ -1,0 +1,884 @@
+{
+  "stop-0": {
+    "id": "stop-0",
+    "character": "Rosa",
+    "role": "Cartógrafa da cidade",
+    "intro": "Cada endereço do meu mapa precisa apontar para um único lugar. Uma função faz um acordo parecido: cada entrada permitida tem uma única saída.",
+    "skill": "Funções",
+    "visual": "function",
+    "steps": [
+      {
+        "title": "Uma entrada, uma saída",
+        "text": "Uma função associa a cada elemento do domínio exatamente um valor no contradomínio. Entradas diferentes podem ter a mesma saída.",
+        "formula": "f:A\\to B,\\quad x\\mapsto f(x)"
+      },
+      {
+        "title": "O domínio é o terreno permitido",
+        "text": "Antes de calcular, procure restrições: denominadores não podem ser zero e raízes quadradas reais exigem radicando não negativo.",
+        "formula": "g(x)=\\sqrt{x-2}\\quad\\Rightarrow\\quad D_g=[2,\\infty)"
+      },
+      {
+        "title": "Imagem não é contradomínio",
+        "text": "A imagem reúne as saídas realmente atingidas. Em $f(x) = x^{2}$, com domínio real, nunca chegamos a uma altura negativa. Mova o ponto para observar.",
+        "formula": "\\operatorname{Im}(f)=[0,\\infty)"
+      }
+    ],
+    "example": [
+      {
+        "title": "Escolha a regra",
+        "text": "Analise $g(x) = \\sqrt{x - 2}$ como função real. Qual conjunto de entradas faz sentido?",
+        "formula": "x-2\\geq0"
+      },
+      {
+        "title": "Encontre as entradas",
+        "text": "Resolva a desigualdade. A entrada $2$ é permitida e produz a saída zero.",
+        "formula": "D_g=[2,\\infty),\\quad g(2)=0"
+      },
+      {
+        "title": "Identifique as saídas",
+        "text": "A raiz principal é não negativa e pode crescer sem limite. Para obter uma saída $y \\ge 0$, basta escolher $x = y^{2} + 2$.",
+        "formula": "\\operatorname{Im}(g)=[0,\\infty),\\quad g(11)=3"
+      }
+    ]
+  },
+  "stop-1": {
+    "id": "stop-1",
+    "character": "Tomás",
+    "role": "Cuidador do rancho",
+    "intro": "Quero redesenhar a cerca sem perder seu formato. Deslocar, refletir e ampliar um gráfico é como reorganizar este terreno.",
+    "skill": "Funções",
+    "visual": "transform",
+    "steps": [
+      {
+        "title": "Mova sem deformar",
+        "text": "Somar $k$ fora da função desloca o gráfico verticalmente. Subtrair $h$ da entrada desloca o desenho $h$ unidades para a direita.",
+        "formula": "g(x)=f(x-h)+k"
+      },
+      {
+        "title": "Reflita e mude a escala",
+        "text": "Multiplicar a saída por $a$ muda sua escala vertical. Se $a < 0$, há também reflexão no eixo horizontal.",
+        "formula": "g(x)=a\\,f(x)"
+      },
+      {
+        "title": "Cuide do lado de dentro",
+        "text": "Em $f(bx)$, com $b \\ne 0$, as coordenadas horizontais são divididas por $b$. Um fator $2$ dentro comprime horizontalmente; $f(-x)$ reflete no eixo vertical.",
+        "formula": "(u,f(u))\\mapsto(u/b,f(u))"
+      }
+    ],
+    "example": [
+      {
+        "title": "Parta da parábola",
+        "text": "O vértice de $f(x) = x^{2}$ é $(0,0)$. Vamos transformar o gráfico em $g(x) = -2(x - 3)^{2} + 1$.",
+        "formula": "f(x)=x^2"
+      },
+      {
+        "title": "Desloque e reflita",
+        "text": "Trocar $x$ por $x - 3$ leva o vértice a $x = 3$. O fator $-2$ inverte a abertura e dobra as distâncias verticais em relação ao eixo $x$.",
+        "formula": "-2(x-3)^2"
+      },
+      {
+        "title": "Ajuste a altura",
+        "text": "Somar $1$ leva o vértice $a (3,1)$. Como a parábola abre para baixo, sua maior saída é $1$.",
+        "formula": "g(3)=1,\\qquad\\operatorname{Im}(g)=(-\\infty,1]"
+      }
+    ]
+  },
+  "stop-2": {
+    "id": "stop-2",
+    "character": "Ivo",
+    "role": "Construtor de pontes",
+    "intro": "O trecho central da ponte está em obras. Mesmo sem pisar nesse ponto, conseguimos observar para onde o caminho está levando.",
+    "skill": "Limites",
+    "visual": "limit",
+    "steps": [
+      {
+        "title": "Observe a aproximação",
+        "text": "Um limite descreve as saídas quando a entrada se aproxima de um ponto. O valor da função exatamente ali pode ser diferente ou nem existir.",
+        "formula": "\\lim_{x\\to a}f(x)=L"
+      },
+      {
+        "title": "Venha dos dois lados",
+        "text": "A aproximação pela esquerda usa $x < a$; pela direita, $x > a$. O limite bilateral real existe quando ambos os limites laterais existem e coincidem.",
+        "formula": "\\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)=L"
+      },
+      {
+        "title": "Um buraco não interrompe o limite",
+        "text": "No gráfico interativo, a reta tem um buraco em $x = 1$. Aproxime o ponto pelos dois lados: as alturas ainda tendem a $2$.",
+        "formula": "f(x)=x+1\\ (x\\ne1),\\quad\\lim_{x\\to1}f(x)=2"
+      }
+    ],
+    "example": [
+      {
+        "title": "Leia a regra à esquerda",
+        "text": "Considere $f(x) = x + 1$ para $x < 1$, $f(1) = 5$ e $f(x) = 3 - x$ para $x > 1$. À esquerda, as saídas tendem a $2$.",
+        "formula": "\\lim_{x\\to1^-}(x+1)=2"
+      },
+      {
+        "title": "Leia a regra à direita",
+        "text": "À direita, $3 - x$ também se aproxima de $2$.",
+        "formula": "\\lim_{x\\to1^+}(3-x)=2"
+      },
+      {
+        "title": "Compare, sem confundir",
+        "text": "Os limites laterais coincidem. Logo o limite é $2$, embora a função valha $5$ no ponto.",
+        "formula": "\\lim_{x\\to1}f(x)=2\\ne f(1)=5"
+      }
+    ]
+  },
+  "stop-3": {
+    "id": "stop-3",
+    "character": "Cora",
+    "role": "Exploradora do cânion",
+    "intro": "Uma expressão pode parecer bloquear a passagem. Antes de desistir, vamos procurar uma forma equivalente que revele o caminho perto do ponto.",
+    "skill": "Limites",
+    "visual": "algebraLimit",
+    "steps": [
+      {
+        "title": "Combine limites conhecidos",
+        "text": "Somar, multiplicar e dividir limites funciona quando os limites relevantes existem e, na divisão, o limite do denominador é diferente de zero.",
+        "formula": "\\lim(f+g)=\\lim f+\\lim g"
+      },
+      {
+        "title": "0/0 pede investigação",
+        "text": "O símbolo $\\frac{0}{0}$ é uma indeterminação, não um resultado. Fatoração ou racionalização pode revelar o comportamento perto do ponto.",
+        "formula": "\\frac{x^2-1}{x-1}=x+1\\quad(x\\ne1)"
+      },
+      {
+        "title": "Equivalência na vizinhança",
+        "text": "Para o limite, basta que as expressões coincidam perto do ponto, excluindo o próprio ponto. A simplificação não preenche automaticamente o buraco.",
+        "formula": "\\lim_{x\\to1}\\frac{x^2-1}{x-1}=2"
+      }
+    ],
+    "example": [
+      {
+        "title": "Identifique a indeterminação",
+        "text": "Calcule o limite de $\\frac{x^2-9}{x-3}$ quando $x \\to 3$. A substituição direta produz $\\frac{0}{0}$.",
+        "formula": "\\frac{3^2-9}{3-3}=\\frac00"
+      },
+      {
+        "title": "Fatore a diferença de quadrados",
+        "text": "Para $x \\ne 3$, podemos cancelar o fator comum $x - 3$.",
+        "formula": "\\frac{(x-3)(x+3)}{x-3}=x+3"
+      },
+      {
+        "title": "Calcule o limite simplificado",
+        "text": "Agora a aproximação está clara: $x + 3$ tende a $6$.",
+        "formula": "\\lim_{x\\to3}(x+3)=6"
+      }
+    ]
+  },
+  "stop-4": {
+    "id": "stop-4",
+    "character": "Lia",
+    "role": "Guardiã da travessia",
+    "intro": "Para atravessar o rio, os caminhos precisam se encontrar na mesma altura. O valor no ponto também precisa fazer parte desse encontro.",
+    "skill": "Continuidade",
+    "visual": "continuity",
+    "steps": [
+      {
+        "title": "Três condições no mesmo lugar",
+        "text": "Ser contínua em $a$ exige que $f(a)$ exista, que o limite em $a$ exista e que ambos sejam iguais.",
+        "formula": "\\lim_{x\\to a}f(x)=f(a)"
+      },
+      {
+        "title": "Reconheça o tipo de ruptura",
+        "text": "Um buraco com limite finito pode ser reparado ajustando o valor do ponto. Num salto, os limites laterais diferem; em uma ruptura infinita, há comportamento não limitado.",
+        "formula": "\\lim_{x\\to a^-}f(x)\\ne\\lim_{x\\to a^+}f(x)"
+      },
+      {
+        "title": "Repare uma descontinuidade removível",
+        "text": "No explorador, mova o valor isolado em $x = 1$. A reta vizinha tende a $2$. A continuidade aparece exatamente quando você encaixa o ponto nessa altura.",
+        "formula": "f(1)=2"
+      }
+    ],
+    "example": [
+      {
+        "title": "Encontre o limite",
+        "text": "Se $f(x) = \\frac{x^2-1}{x-1}$ para $x \\ne 1$ e $f(1) = k$, simplifique fora do ponto.",
+        "formula": "f(x)=x+1\\quad(x\\ne1)"
+      },
+      {
+        "title": "Escolha o valor do ponto",
+        "text": "Como o limite é $2$, o único valor que torna a função contínua é $k = 2$.",
+        "formula": "k=\\lim_{x\\to1}f(x)=2"
+      },
+      {
+        "title": "Verifique o encaixe",
+        "text": "Com $k = 2$, o valor e os dois limites laterais coincidem.",
+        "formula": "\\lim_{x\\to1^-}f(x)=f(1)=\\lim_{x\\to1^+}f(x)=2"
+      }
+    ]
+  },
+  "stop-5": {
+    "id": "stop-5",
+    "character": "Abel",
+    "role": "Responsável pelo posto",
+    "intro": "A trilha sai abaixo da linha do horizonte e termina acima. Se ela não tiver rupturas, em algum lugar precisará cruzar essa linha.",
+    "skill": "Continuidade",
+    "visual": "ivt",
+    "steps": [
+      {
+        "title": "Todo valor entre as extremidades",
+        "text": "Se $f$ é contínua em $[a,b]$, ela atinge cada valor entre $f(a)$ e $f(b)$. Esse é o Teorema do Valor Intermediário.",
+        "formula": "f(c)=L\\quad\\text{para algum }c\\in[a,b]"
+      },
+      {
+        "title": "Uma garantia de existência",
+        "text": "Se $f(a)$ e $f(b)$ têm sinais opostos, zero está entre eles. Assim, há uma raiz no interior do intervalo. O teorema não diz que ela é única.",
+        "formula": "f(a)f(b)<0\\Rightarrow\\exists c\\in(a,b):f(c)=0"
+      },
+      {
+        "title": "Aproxime pela bisseção",
+        "text": "Divida o intervalo ao meio e mantenha a metade cujas extremidades têm sinais opostos. A continuidade conserva a garantia.",
+        "formula": "m=\\frac{a+b}{2}"
+      }
+    ],
+    "example": [
+      {
+        "title": "Verifique as hipóteses",
+        "text": "Para $f(x) = x^{2} - 2$ em $[1,2]$, a função é contínua por ser polinomial.",
+        "formula": "f(1)=-1,\\quad f(2)=2"
+      },
+      {
+        "title": "Garanta uma raiz",
+        "text": "Os sinais são opostos. Existe $c$ em $(1,2)$ com $f(c) = 0$, sem precisar conhecer $\\sqrt{2}$ antecipadamente.",
+        "formula": "\\exists c\\in(1,2):c^2-2=0"
+      },
+      {
+        "title": "Estreite o intervalo",
+        "text": "O ponto médio é $1{,}5$ e $f(1{,}5) = 0{,}25$. A mudança de sinal fica entre $1$ e $1{,}5$.",
+        "formula": "c\\in(1,1{,}5)"
+      }
+    ]
+  },
+  "stop-7": {
+    "id": "stop-7",
+    "character": "Davi",
+    "role": "Topógrafo da mina",
+    "intro": "Uma inclinação média não basta para ler cada trecho da galeria. Vamos transformar a ideia do mirante em uma definição precisa.",
+    "skill": "Derivadas",
+    "visual": "derivative",
+    "steps": [
+      {
+        "title": "Da taxa ao limite",
+        "text": "A derivada em $a$ é o limite da razão incremental, se esse limite existe como número real. A entrada se aproxima por ambos os lados, quando ambos fazem parte do domínio.",
+        "formula": "f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}h"
+      },
+      {
+        "title": "Um ponto ou uma função",
+        "text": "$f'(a)$ é um número. Ao variar $a$, obtemos uma função derivada $f'$ que associa a cada ponto sua inclinação local.",
+        "formula": "f(x)=x^2\\Rightarrow f'(x)=2x"
+      },
+      {
+        "title": "Nem todo gráfico tem tangente única",
+        "text": "Em $|x|$, a inclinação à esquerda de zero é $-1$ e à direita é $1$. Continuidade não garante derivabilidade. Derivabilidade, por sua vez, implica continuidade.",
+        "formula": "(|x|)'(0)\\text{ não existe}"
+      }
+    ],
+    "example": [
+      {
+        "title": "Monte a razão incremental",
+        "text": "Para $f(x) = x^{2}$, mantenha $a$ como ponto de referência e use $h \\ne 0$.",
+        "formula": "\\frac{(a+h)^2-a^2}{h}"
+      },
+      {
+        "title": "Expanda e simplifique",
+        "text": "O termo $a^{2}$ cancela. Depois divida os termos restantes por $h$.",
+        "formula": "\\frac{2ah+h^2}{h}=2a+h"
+      },
+      {
+        "title": "Tome o limite",
+        "text": "Quando $h \\to 0$, a inclinação tende a $2a$. Em $a = 3$, a tangente tem inclinação $6$.",
+        "formula": "f'(a)=2a,\\quad f'(3)=6"
+      }
+    ]
+  },
+  "stop-8": {
+    "id": "stop-8",
+    "character": "Bento",
+    "role": "Anfitrião do saloon",
+    "intro": "As contas das mesas ficam mais simples quando reconhecemos padrões. Vamos montar um repertório de regras sem perder de vista seu significado.",
+    "skill": "Derivadas",
+    "visual": "power",
+    "steps": [
+      {
+        "title": "A regra da potência",
+        "text": "Para potências nos pontos onde a regra se aplica, multiplique pelo expoente e reduza-o em uma unidade. Para expoentes inteiros positivos, vale em todo real.",
+        "formula": "\\frac{d}{dx}x^n=nx^{n-1}"
+      },
+      {
+        "title": "Constantes e somas",
+        "text": "Uma constante não muda, então sua derivada é zero. Fatores constantes saem da derivada e somas podem ser derivadas termo a termo.",
+        "formula": "(af+bg)'=af'+bg',\\quad c'=0"
+      },
+      {
+        "title": "Respeite o domínio",
+        "text": "A mesma regra permite derivar $x^{-1}$ para $x \\ne 0$ e $\\sqrt{x}$ para $x > 0$. A fórmula não deve ser avaliada fora do domínio de derivabilidade.",
+        "formula": "(\\sqrt{x})'=\\frac1{2\\sqrt{x}}\\quad(x>0)"
+      }
+    ],
+    "example": [
+      {
+        "title": "Separe os termos",
+        "text": "Queremos derivar $p(x) = 3x^{4} - 2x + 7$. Use a linearidade.",
+        "formula": "p'(x)=3(x^4)'-2(x)'+(7)'"
+      },
+      {
+        "title": "Aplique a potência",
+        "text": "O termo $x^{4}$ vira $4x^{3}$; $x$ vira $1$; a constante vira zero.",
+        "formula": "p'(x)=3\\cdot4x^3-2\\cdot1+0"
+      },
+      {
+        "title": "Simplifique e avalie",
+        "text": "A derivada é $12x^{3} - 2$. Em $x = 1$, a taxa local é $10$.",
+        "formula": "p'(x)=12x^3-2,\\quad p'(1)=10"
+      }
+    ]
+  },
+  "stop-9": {
+    "id": "stop-9",
+    "character": "Elena",
+    "role": "Engenheira da ferrovia",
+    "intro": "A área de uma plataforma depende do comprimento e da largura. Se ambos mudam, precisamos contabilizar as duas contribuições.",
+    "skill": "Derivadas",
+    "visual": "product",
+    "steps": [
+      {
+        "title": "Duas mudanças ao mesmo tempo",
+        "text": "Derivar um produto não significa multiplicar as derivadas. Cada fator contribui mantendo o outro no seu valor atual.",
+        "formula": "(uv)'=u'v+uv'"
+      },
+      {
+        "title": "Veja a área crescer",
+        "text": "No retângulo, a mudança de área inclui duas faixas principais. O pequeno canto é de segunda ordem e desaparece após dividir por $h$ e tomar o limite.",
+        "formula": "\\Delta(uv)=v\\Delta u+u\\Delta v+\\Delta u\\Delta v"
+      },
+      {
+        "title": "Organize antes de simplificar",
+        "text": "Identifique $u$, $v$ e suas derivadas. Escreva os dois termos da regra antes de combinar expressões.",
+        "formula": "u=x^2,\\quad v=x+1"
+      }
+    ],
+    "example": [
+      {
+        "title": "Identifique os fatores",
+        "text": "Para $p(x) = x^{2}(x + 1)$, temos $u' = 2x$ e $v' = 1$.",
+        "formula": "u=x^2,\\quad v=x+1"
+      },
+      {
+        "title": "Some as contribuições",
+        "text": "Primeiro derive o primeiro fator; depois derive o segundo.",
+        "formula": "p'(x)=2x(x+1)+x^2\\cdot1"
+      },
+      {
+        "title": "Confira por expansão",
+        "text": "Simplificar dá $3x^{2} + 2x$, o mesmo resultado que derivar $x^{3} + x^{2}$.",
+        "formula": "p'(x)=3x^2+2x"
+      }
+    ]
+  },
+  "stop-10": {
+    "id": "stop-10",
+    "character": "Nina",
+    "role": "Comerciante da passagem",
+    "intro": "A quantidade por viajante é uma razão: o total dividido pelo número de pessoas. Quando os dois mudam, a ordem da conta faz diferença.",
+    "skill": "Derivadas",
+    "visual": "quotient",
+    "steps": [
+      {
+        "title": "A ordem importa",
+        "text": "Na derivada de um quociente, derive o numerador vezes o denominador e subtraia o numerador vezes a derivada do denominador.",
+        "formula": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}"
+      },
+      {
+        "title": "O denominador fica ao quadrado",
+        "text": "O fator $v^{2}$ é essencial. A regra só se aplica onde $v \\ne 0$ e os dois fatores são deriváveis.",
+        "formula": "v(x)\\ne0"
+      },
+      {
+        "title": "Simplifique quando fizer sentido",
+        "text": "Algumas razões podem ser reescritas mais facilmente antes de derivar. Isso não elimina as restrições do domínio original.",
+        "formula": "\\frac{x^2+1}{x}=x+\\frac1x\\quad(x\\ne0)"
+      }
+    ],
+    "example": [
+      {
+        "title": "Escolha u e v",
+        "text": "Derive $q(x) = \\frac{x^2+1}{x}$, com $x \\ne 0$.",
+        "formula": "u=x^2+1,\\quad v=x,\\quad u'=2x,\\quad v'=1"
+      },
+      {
+        "title": "Aplique a regra na ordem certa",
+        "text": "O numerador é $2x \\cdot x - (x^{2} + 1) \\cdot 1$.",
+        "formula": "q'(x)=\\frac{2x^2-(x^2+1)}{x^2}"
+      },
+      {
+        "title": "Simplifique o resultado",
+        "text": "A derivada é $1 - \\frac{1}{x^2}$, também obtida ao derivar $x + \\frac{1}{x}$.",
+        "formula": "q'(x)=1-\\frac1{x^2}"
+      }
+    ]
+  },
+  "stop-11": {
+    "id": "stop-11",
+    "character": "Gael",
+    "role": "Guia do desfiladeiro",
+    "intro": "Uma mudança no primeiro trecho altera o segundo. Para seguir caminhos encadeados, precisamos multiplicar as taxas de cada etapa.",
+    "skill": "Derivadas",
+    "visual": "chain",
+    "steps": [
+      {
+        "title": "Uma função dentro de outra",
+        "text": "Na composição, primeiro $u$ transforma $x$; depois $F$ transforma $u$. A taxa total considera as duas mudanças.",
+        "formula": "y=F(u(x))"
+      },
+      {
+        "title": "Derive de fora para dentro",
+        "text": "Avalie a derivada externa na função interna e multiplique pela derivada interna.",
+        "formula": "\\frac{dy}{dx}=F'(u(x))\\,u'(x)"
+      },
+      {
+        "title": "Não esqueça a taxa interna",
+        "text": "Em $(3x + 1)^{2}$, derivar o quadrado não encerra a conta: a entrada $3x + 1$ muda três vezes mais rápido que $x$.",
+        "formula": "[(3x+1)^2]'=2(3x+1)\\cdot3"
+      }
+    ],
+    "example": [
+      {
+        "title": "Separe as camadas",
+        "text": "Para $y = (3x + 1)^{2}$, escolha $u = 3x + 1$ e $F(u) = u^{2}$.",
+        "formula": "u'=3,\\quad F'(u)=2u"
+      },
+      {
+        "title": "Conecte as taxas",
+        "text": "Multiplique $2u$ por $3$ e recoloque $u$.",
+        "formula": "y'=2u\\cdot3=6(3x+1)"
+      },
+      {
+        "title": "Avalie no ponto",
+        "text": "Em $x = 1$, a derivada é $6 \\cdot 4 = 24$.",
+        "formula": "y'(1)=24"
+      }
+    ]
+  },
+  "stop-12": {
+    "id": "stop-12",
+    "character": "Aurora",
+    "role": "Astrônoma da cidade",
+    "intro": "Oscilações, crescimento e escalas aparecem nas minhas observações. Cada família de funções tem sua própria assinatura de variação.",
+    "skill": "Derivadas",
+    "visual": "families",
+    "steps": [
+      {
+        "title": "Oscilações em radianos",
+        "text": "As fórmulas usuais de seno e cosseno usam argumentos em radianos. Observe no gráfico como seus sinais e valores se relacionam.",
+        "formula": "(\\sin x)'=\\cos x,\\quad(\\cos x)'=-\\sin x"
+      },
+      {
+        "title": "Crescimento exponencial",
+        "text": "A função $e^{x}$ é igual à sua derivada. Para base $a > 0$, $a \\ne 1$, surge um fator $\\ln$ a.",
+        "formula": "(e^x)'=e^x,\\quad(a^x)'=a^x\\ln a"
+      },
+      {
+        "title": "Logaritmos e composição",
+        "text": "A derivada de $\\ln x$ é $\\frac{1}{x}$ para $x > 0$. Se há uma função interna positiva, use a regra da cadeia.",
+        "formula": "[\\ln u(x)]'=\\frac{u'(x)}{u(x)}\\quad(u(x)>0)"
+      }
+    ],
+    "example": [
+      {
+        "title": "Reconheça as famílias",
+        "text": "Derive $f(x) = e^{2x} + \\ln x - \\cos x$, no domínio $x > 0$.",
+        "formula": "f(x)=e^{2x}+\\ln x-\\cos x"
+      },
+      {
+        "title": "Trate as três parcelas",
+        "text": "A exponencial exige fator interno $2$. A derivada de $-\\cos x$ é $+\\sin x$.",
+        "formula": "f'(x)=2e^{2x}+\\frac1x+\\sin x"
+      },
+      {
+        "title": "Preserve o domínio",
+        "text": "A expressão derivada deve ser usada no domínio original $x > 0$.",
+        "formula": "D_f=(0,\\infty)"
+      }
+    ]
+  },
+  "stop-13": {
+    "id": "stop-13",
+    "character": "Teresa",
+    "role": "Agrimensora do vale",
+    "intro": "Temos uma quantidade fixa de cerca para um terreno retangular. A derivada ajuda a descobrir qual projeto aproveita melhor esse material.",
+    "skill": "Aplicações de derivadas",
+    "visual": "optimization",
+    "steps": [
+      {
+        "title": "O sinal revela o movimento",
+        "text": "Em um intervalo, derivada positiva indica crescimento e derivada negativa indica decrescimento. Um zero da derivada é candidato a extremo, não garantia.",
+        "formula": "f'>0\\Rightarrow f\\text{ crescente}"
+      },
+      {
+        "title": "Traduza a restrição",
+        "text": "Um retângulo de perímetro $20$ tem lados $x$ e $10 - x$. Sua área depende de uma só variável, com $0 < x < 10$.",
+        "formula": "A(x)=x(10-x)"
+      },
+      {
+        "title": "Compare os candidatos",
+        "text": "Para um problema em intervalo fechado, compare os pontos críticos e as extremidades. Aqui podemos incluir $0$ e $10$ como casos degenerados de área zero.",
+        "formula": "A'(x)=10-2x"
+      }
+    ],
+    "example": [
+      {
+        "title": "Encontre o ponto crítico",
+        "text": "Resolva $10 - 2x = 0$. O candidato é $x = 5$.",
+        "formula": "A'(5)=0"
+      },
+      {
+        "title": "Verifique a mudança de sinal",
+        "text": "A derivada é positiva antes de $5$ e negativa depois. A área cresce e então diminui.",
+        "formula": "A'>0\\ (x<5),\\quad A'<0\\ (x>5)"
+      },
+      {
+        "title": "Compare os valores",
+        "text": "A área máxima é $25$, atingida pelo quadrado de lado $5$. As extremidades têm área zero.",
+        "formula": "A(5)=25> A(0)=A(10)=0"
+      }
+    ]
+  },
+  "stop-14": {
+    "id": "stop-14",
+    "character": "Martim",
+    "role": "Cartógrafo do forte",
+    "intro": "Antes de desenhar o relevo inteiro, marco subidas, descidas e mudanças de curvatura. Duas derivadas já contam boa parte dessa história.",
+    "skill": "Aplicações de derivadas",
+    "visual": "curvature",
+    "steps": [
+      {
+        "title": "Pontos críticos",
+        "text": "No interior do domínio, um ponto é crítico quando a derivada é zero ou não existe. Ele pode ser candidato a um extremo local.",
+        "formula": "f'(c)=0\\quad\\text{ou }f'(c)\\text{ não existe}"
+      },
+      {
+        "title": "A segunda derivada lê a curvatura",
+        "text": "Se $f'' > 0$ em um intervalo, $f$ é côncava para cima; se $f'' < 0$, é côncava para baixo. A concavidade descreve como a inclinação muda.",
+        "formula": "f''>0\\Rightarrow f'\\text{ crescente}"
+      },
+      {
+        "title": "Confirme a inflexão",
+        "text": "Um ponto de inflexão exige mudança de concavidade. Apenas encontrar $f'' = 0$ não basta. Reúna essa informação com domínio, interceptos e sinal de $f'$.",
+        "formula": "(x^4)''(0)=0\\quad\\text{sem inflexão}"
+      }
+    ],
+    "example": [
+      {
+        "title": "Derive o relevo",
+        "text": "Para $f(x) = x^{3} - 3x$, os pontos estacionários são $-1$ e $1$.",
+        "formula": "f'(x)=3x^2-3,\\quad f''(x)=6x"
+      },
+      {
+        "title": "Classifique os extremos",
+        "text": "$f'$ troca de positivo para negativo em $-1$ e de negativo para positivo em $1$.",
+        "formula": "f(-1)=2\\ (\\text{máximo local}),\\quad f(1)=-2\\ (\\text{mínimo local})"
+      },
+      {
+        "title": "Localize a inflexão",
+        "text": "$f''$ é negativa à esquerda de zero e positiva à direita. Assim, $(0,0)$ é ponto de inflexão.",
+        "formula": "f''(x)=6x,\\quad (0,f(0))=(0,0)"
+      }
+    ]
+  },
+  "stop-15": {
+    "id": "stop-15",
+    "character": "Maya",
+    "role": "Agrimensora do acampamento",
+    "intro": "A margem do rio não é retangular. Vou dividi-la em faixas estreitas para aproximar sua área e refinar a medida.",
+    "skill": "Integrais",
+    "visual": "riemann",
+    "steps": [
+      {
+        "title": "Divida em pequenas faixas",
+        "text": "Particione $[a,b]$ em $n$ intervalos iguais. Em cada um, escolha um ponto para determinar a altura de um retângulo.",
+        "formula": "\\Delta x=\\frac{b-a}{n}"
+      },
+      {
+        "title": "Some as contribuições",
+        "text": "Cada parcela é altura vezes largura. Uma soma de Riemann usa os valores da função, incluindo sinais quando a função é negativa.",
+        "formula": "S_n=\\sum_{i=1}^n f(x_i^*)\\Delta x"
+      },
+      {
+        "title": "Refine a aproximação",
+        "text": "Para funções contínuas, as somas convergem para a integral quando a maior largura tende a zero. Escolher esquerda ou direita altera a aproximação finita, mas não o limite.",
+        "formula": "\\lim_{n\\to\\infty}S_n=\\int_a^b f(x)\\,dx"
+      }
+    ],
+    "example": [
+      {
+        "title": "Monte dois retângulos",
+        "text": "Aproxime a área sob $f(x) = x$ em $[0,2]$ usando duas faixas e extremidades direitas.",
+        "formula": "\\Delta x=1,\\quad x_1^*=1,\\quad x_2^*=2"
+      },
+      {
+        "title": "Some as áreas",
+        "text": "As alturas são $1$ e $2$, ambas com largura $1$. A estimativa é $3$.",
+        "formula": "S_2=1\\cdot1+2\\cdot1=3"
+      },
+      {
+        "title": "Compare com a área exata",
+        "text": "O gráfico forma um triângulo de base $2$ e altura $2$. A área exata é $2$. Como $f$ cresce, os retângulos à direita superestimam.",
+        "formula": "A=\\frac{2\\cdot2}{2}=2"
+      }
+    ]
+  },
+  "stop-16": {
+    "id": "stop-16",
+    "character": "Noé",
+    "role": "Observador do rio",
+    "intro": "Há trechos que contribuem a favor e outros contra o balanço. A integral mantém esses sinais: o total líquido pode ser zero mesmo com grandes áreas.",
+    "skill": "Integrais",
+    "visual": "signed",
+    "steps": [
+      {
+        "title": "Um balanço com sinal",
+        "text": "Acima do eixo $x$, a contribuição é positiva. Abaixo, negativa. A integral definida é área líquida, não necessariamente área geométrica total.",
+        "formula": "\\int_a^b f(x)\\,dx=A_+-A_-"
+      },
+      {
+        "title": "Oriente o intervalo",
+        "text": "Inverter os limites muda o sinal; integrar de um ponto até ele mesmo dá zero.",
+        "formula": "\\int_b^a f=-\\int_a^b f,\\quad\\int_a^a f=0"
+      },
+      {
+        "title": "Divida e combine",
+        "text": "É possível somar integrais sobre intervalos adjacentes e usar linearidade. Para a área geométrica total, integre $|f|$ ou separe os trechos de sinal.",
+        "formula": "\\int_a^b f+\\int_b^c f=\\int_a^c f"
+      }
+    ],
+    "example": [
+      {
+        "title": "Separe os lados",
+        "text": "Para $f(x) = x$ em $[-1,1]$, há um triângulo abaixo do eixo e outro acima.",
+        "formula": "A_-=\\frac12,\\quad A_+=\\frac12"
+      },
+      {
+        "title": "Calcule o balanço",
+        "text": "As contribuições se cancelam, então a integral vale zero.",
+        "formula": "\\int_{-1}^{1}x\\,dx=-\\frac12+\\frac12=0"
+      },
+      {
+        "title": "Diferencie área e integral",
+        "text": "A área geométrica soma os módulos e vale $1$, embora a integral seja zero.",
+        "formula": "\\int_{-1}^{1}|x|\\,dx=1"
+      }
+    ]
+  },
+  "stop-17": {
+    "id": "stop-17",
+    "character": "Helena",
+    "role": "Pesquisadora do forte",
+    "intro": "Acumular e medir a taxa de mudança parecem tarefas diferentes. O Teorema Fundamental revela a ligação entre elas.",
+    "skill": "Integrais",
+    "visual": "fundamental",
+    "steps": [
+      {
+        "title": "A derivada da acumulação",
+        "text": "Se $f$ é contínua e $A(x)$ acumula $f$ desde $a$ até $x$, então $A'(x) = f(x)$. A taxa de crescimento do acumulado é a função original.",
+        "formula": "A(x)=\\int_a^x f(t)\\,dt\\Rightarrow A'(x)=f(x)"
+      },
+      {
+        "title": "Calcule por uma primitiva",
+        "text": "Se $F' = f$ e $f$ é contínua em $[a,b]$, a integral definida é a diferença dos valores da primitiva nas extremidades.",
+        "formula": "\\int_a^b f(x)\\,dx=F(b)-F(a)"
+      },
+      {
+        "title": "Se o limite se move de outro jeito",
+        "text": "Para $A(g(x))$, use também a regra da cadeia: a borda móvel contribui com $g'(x)$.",
+        "formula": "\\frac d{dx}\\int_a^{g(x)}f(t)\\,dt=f(g(x))g'(x)"
+      }
+    ],
+    "example": [
+      {
+        "title": "Escolha uma primitiva",
+        "text": "Para calcular a integral de $2x$ entre $1$ e $3$, uma primitiva é $F(x) = x^{2}$.",
+        "formula": "F'(x)=2x"
+      },
+      {
+        "title": "Avalie as extremidades",
+        "text": "Calcule a diferença final menos inicial.",
+        "formula": "F(3)-F(1)=9-1"
+      },
+      {
+        "title": "Interprete o resultado",
+        "text": "A contribuição acumulada é $8$. A constante de qualquer outra primitiva se cancelaria na subtração.",
+        "formula": "\\int_1^3 2x\\,dx=8"
+      }
+    ]
+  },
+  "stop-18": {
+    "id": "stop-18",
+    "character": "Olívia",
+    "role": "Escrivã da vila",
+    "intro": "Conhecer a taxa de mudança permite reconstruir muitas histórias possíveis. Uma condição inicial escolhe qual delas corresponde ao viajante.",
+    "skill": "Integrais",
+    "visual": "primitive",
+    "steps": [
+      {
+        "title": "Faça a pergunta inversa",
+        "text": "Uma primitiva de $f$ é uma função $F$ cuja derivada é $f$. Em um intervalo, duas primitivas diferem por uma constante.",
+        "formula": "F'=f\\Rightarrow\\int f(x)\\,dx=F(x)+C"
+      },
+      {
+        "title": "Inverta a regra da potência",
+        "text": "Some $1$ ao expoente e divida por esse novo expoente. O caso $n = -1$ precisa de outra fórmula.",
+        "formula": "\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C\\quad(n\\ne-1)"
+      },
+      {
+        "title": "Reconheça a exceção",
+        "text": "A integral de $\\frac{1}{x}$ é $\\ln |x| + C$ em cada intervalo que não contém zero. Uma condição como $F(0) = 5$ pode determinar $C$ em outros exemplos.",
+        "formula": "\\int\\frac1x\\,dx=\\ln|x|+C"
+      }
+    ],
+    "example": [
+      {
+        "title": "Integre termo a termo",
+        "text": "Encontre $F$ tal que $F'(x) = 3x^{2} - 2$ e $F(0) = 5$.",
+        "formula": "F(x)=x^3-2x+C"
+      },
+      {
+        "title": "Use a condição inicial",
+        "text": "Substituir $x = 0$ deixa apenas a constante.",
+        "formula": "F(0)=C=5"
+      },
+      {
+        "title": "Confira derivando",
+        "text": "A função reconstruída é $x^{3} - 2x + 5$. Sua derivada devolve a taxa dada.",
+        "formula": "F(x)=x^3-2x+5,\\quad F'(x)=3x^2-2"
+      }
+    ]
+  },
+  "stop-19": {
+    "id": "stop-19",
+    "character": "Yara",
+    "role": "Naturalista da floresta",
+    "intro": "Um caminho sinuoso pode ficar simples quando mudamos a referência. A substituição procura uma variável que reúna a parte interna da expressão.",
+    "skill": "Integrais",
+    "visual": "substitution",
+    "steps": [
+      {
+        "title": "Reconheça a regra da cadeia ao contrário",
+        "text": "Se a integral contém uma função de $g(x)$ multiplicada por $g'(x)$, trocar $u = g(x)$ pode simplificar a conta.",
+        "formula": "\\int F(g(x))g'(x)\\,dx=\\int F(u)\\,du"
+      },
+      {
+        "title": "Transforme todo o diferencial",
+        "text": "A notação $du = g'(x) dx$ registra o fator necessário. Não podemos trocar a função interna e simplesmente ignorar esse fator.",
+        "formula": "u=x^2+1,\\quad du=2x\\,dx"
+      },
+      {
+        "title": "Troque também os limites",
+        "text": "Em uma integral definida, transforme as extremidades para a variável $u$. Alternativamente, volte para $x$ antes de usar os limites originais.",
+        "formula": "x=a,b\\Rightarrow u=g(a),g(b)"
+      }
+    ],
+    "example": [
+      {
+        "title": "Escolha a substituição",
+        "text": "Calcule $\\int 2x(x^{2} + 1)^{3} \\,\\mathrm{d}x$. A expressão interna tem derivada $2x$, exatamente o fator externo.",
+        "formula": "u=x^2+1,\\quad du=2x\\,dx"
+      },
+      {
+        "title": "Integre na nova variável",
+        "text": "A integral se transforma em uma potência simples.",
+        "formula": "\\int u^3\\,du=\\frac{u^4}{4}+C"
+      },
+      {
+        "title": "Volte à variável original",
+        "text": "Recoloque $u = x^{2} + 1$. Derivar o resultado permite conferir a resposta.",
+        "formula": "\\int2x(x^2+1)^3\\,dx=\\frac{(x^2+1)^4}{4}+C"
+      }
+    ]
+  },
+  "stop-20": {
+    "id": "stop-20",
+    "character": "Otávio",
+    "role": "Medidor de terras",
+    "intro": "Duas curvas delimitam esta faixa do cânion. Vamos medir a distância vertical entre elas e somar essas pequenas faixas.",
+    "skill": "Integrais",
+    "visual": "between",
+    "steps": [
+      {
+        "title": "Encontre as interseções",
+        "text": "Os pontos onde $f = g$ determinam possíveis limites da região. Primeiro identifique o intervalo desejado.",
+        "formula": "f(x)=g(x)"
+      },
+      {
+        "title": "Subtraia de cima para baixo",
+        "text": "Se $f \\ge g$ em $[a,b]$, a área é a integral de $f - g$. O sinal das duas funções em relação ao eixo $x$ não altera essa regra.",
+        "formula": "A=\\int_a^b[f(x)-g(x)]\\,dx"
+      },
+      {
+        "title": "Divida se as curvas trocarem de posição",
+        "text": "Se a curva superior muda, separe nos cruzamentos ou integre o módulo da diferença. A área geométrica não é negativa.",
+        "formula": "A=\\int_a^b|f(x)-g(x)|\\,dx"
+      }
+    ],
+    "example": [
+      {
+        "title": "Resolva os encontros",
+        "text": "Entre $y = x$ e $y = x^{2}$, as interseções satisfazem $x^{2} = x$.",
+        "formula": "x(x-1)=0\\Rightarrow x=0,1"
+      },
+      {
+        "title": "Leia a ordem no intervalo",
+        "text": "Para $0 < x < 1$, a reta $x$ fica acima da parábola $x^{2}$. A altura de cada faixa é $x - x^{2}$.",
+        "formula": "A=\\int_0^1(x-x^2)\\,dx"
+      },
+      {
+        "title": "Integre a diferença",
+        "text": "A primitiva é $\\frac{x^{2}}{2} - \\frac{x^{3}}{3}$. Nas extremidades, a diferença vale $\\frac{1}{6}$.",
+        "formula": "A=\\left[\\frac{x^2}2-\\frac{x^3}3\\right]_0^1=\\frac16"
+      }
+    ]
+  },
+  "stop-21": {
+    "id": "stop-21",
+    "character": "Samuel",
+    "role": "Chefe da estação",
+    "intro": "A viagem uniu mapas, taxas e acumulação. Agora vamos ler o movimento de uma pequena vagoneta combinando essas três ideias.",
+    "skill": "Integrais",
+    "visual": "synthesis",
+    "steps": [
+      {
+        "title": "Da posição à velocidade",
+        "text": "Uma função posição descreve onde estamos. Sua derivada é a velocidade; a derivada da velocidade é a aceleração.",
+        "formula": "v(t)=s'(t),\\quad a(t)=v'(t)"
+      },
+      {
+        "title": "Da velocidade ao deslocamento",
+        "text": "A integral da velocidade fornece a mudança de posição. Para a distância percorrida, some os módulos das contribuições de movimento.",
+        "formula": "s(b)-s(a)=\\int_a^b v(t)\\,dt"
+      },
+      {
+        "title": "Leia o modelo por inteiro",
+        "text": "Domínio, zeros, sinais, derivadas e integrais respondem a perguntas diferentes. Se $v$ troca de sinal, houve mudança de sentido; isso exige atenção ao calcular a distância.",
+        "formula": "\\text{distância}=\\int_a^b|v(t)|\\,dt"
+      }
+    ],
+    "example": [
+      {
+        "title": "Encontre a troca de sentido",
+        "text": "Considere $v(t) = 2t - 2$ em $[0,3]$ e $s(0) = 0$. A velocidade zera em $t = 1$ e troca de negativa para positiva.",
+        "formula": "v(1)=0,\\quad a(t)=2"
+      },
+      {
+        "title": "Reconstrua a posição",
+        "text": "Uma primitiva da velocidade é $t^{2} - 2t$. A condição inicial fixa a constante em zero.",
+        "formula": "s(t)=t^2-2t,\\quad s(3)-s(0)=3"
+      },
+      {
+        "title": "Calcule a distância total",
+        "text": "De $0$ a $1$, o deslocamento é $-1$; de $1$ a $3$, é $4$. A distância soma os módulos e vale $5$, enquanto o deslocamento total vale $3$.",
+        "formula": "\\int_0^3|2t-2|\\,dt=1+4=5"
+      }
+    ]
+  }
+}

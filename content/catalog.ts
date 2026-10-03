@@ -1,0 +1,12 @@
+import lessonData from './curriculum-lessons.json';
+import questionData from './curriculum-questions.json';
+import {lesson as mirante} from './lesson';
+import {questions as originalQuestions,trainingQuestions as originalTraining,type Question} from './questions';
+import type {Skill} from './stops';
+export type Step={title:string;text:string;formula:string};
+export type LessonData={id:string;character:string;role:string;intro:string;skill:Skill;visual:string;steps:Step[];example:Step[];questions:Question[]};
+export const lessons:Record<string,LessonData>=Object.fromEntries(Object.entries(lessonData).map(([id,lesson])=>[id,{...lesson,questions:questionData[id as keyof typeof questionData]}])) as Record<string,LessonData>;
+lessons.mirante={...mirante,skill:'Derivadas',visual:'secant',questions:originalQuestions.map(q=>({...q,stopId:'mirante'}))};
+export const questionBank=Object.values(lessons).flatMap(l=>l.questions);
+export const extraTraining=originalTraining.map(q=>({...q,stopId:'mirante'}));
+export const allQuestions=[...questionBank,...extraTraining];

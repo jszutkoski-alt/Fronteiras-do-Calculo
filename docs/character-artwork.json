@@ -1,0 +1,127 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "asset_count": 20,
+  "visual_qa": "All 20 inspected via contact sheet: distinct adults, consistent woodcut palette, faces and hats visible, props readable. No text or watermarks.",
+  "assets": [
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "path": "public/characters/rosa.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Rosa, a woman cartographer with warm brown skin, curly dark hair pinned up, rolled map, open collar and ochre waistcoat. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "path": "public/characters/tomas.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Tomás, a sturdy ranch caretaker man with tan skin, wide brim work hat, neckerchief and work shirt. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "ivo",
+      "name": "Ivo",
+      "path": "public/characters/ivo.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Ivo, a bridge builder carpenter man with pale freckled skin, curly auburn beard, carpenter pencil and leather apron. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "cora",
+      "name": "Cora",
+      "path": "public/characters/cora.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Cora, a canyon explorer woman with dark skin, short natural curls, trail hat and practical jacket. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "lia",
+      "name": "Lia",
+      "path": "public/characters/lia.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Lia, a river crossing guardian woman with olive skin, long dark braid, rope across shoulder and sturdy coat. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "abel",
+      "name": "Abel",
+      "path": "public/characters/abel.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Abel, an older trading post keeper man with tawny skin, round spectacles, gray beard and simple vest. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "davi",
+      "name": "Davi",
+      "path": "public/characters/davi.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Davi, a mine surveyor man with dark brown skin, close cropped hair, miner's cap and rolled plans. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "bento",
+      "name": "Bento",
+      "path": "public/characters/bento.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Bento, a saloon host man with a broad mustache, slicked hair, vest and apron behind a simple low wooden counter, no alcohol. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "nina",
+      "name": "Nina",
+      "path": "public/characters/nina.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Nina, a merchant woman with East Asian features, round face, dark low bun, ledger held to chest and high collar blouse. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "gael",
+      "name": "Gael",
+      "path": "public/characters/gael.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Gael, a canyon guide man with sunworn bronze skin, long dark hair, slouch hat and ochre bandanna. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "path": "public/characters/aurora.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Aurora, an astronomer woman with pale skin, wavy short black hair, small brass telescope in hand and practical waistcoat. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "teresa",
+      "name": "Teresa",
+      "path": "public/characters/teresa.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Teresa, a land surveyor woman with deep brown skin, hair in a bun, measuring tool in hand and broad brim hat. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "martim",
+      "name": "Martim",
+      "path": "public/characters/martim.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Martim, an older fort cartographer man with light skin, bushy white sideburns, thin spectacles and rolled map. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "path": "public/characters/maya.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Maya, a campsite surveyor woman with brown skin, long black braids, work shirt and small compass. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "noe",
+      "name": "Noé",
+      "path": "public/characters/noe.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Noé, an older river observer man with medium brown skin, thick white beard, soft felt hat and weathered work coat. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "helena",
+      "name": "Helena",
+      "path": "public/characters/helena.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Helena, a fort researcher woman with light olive skin, dark hair in a tidy bun, round glasses, notebook held in arms and high collar blouse. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "olivia",
+      "name": "Olívia",
+      "path": "public/characters/olivia.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Olívia, a village scribe woman with fair freckled skin, loosely pinned auburn hair, pen in hand and shawl. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "yara",
+      "name": "Yara",
+      "path": "public/characters/yara.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Yara, a forest naturalist woman with deep brown skin, long dark wavy hair, botanical notebook showing a leaf drawing and practical coat. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "otavio",
+      "name": "Otávio",
+      "path": "public/characters/otavio.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Otávio, a land measurer man with tan skin, shaved head and neat dark beard, survey tool in hand and suspenders. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    },
+    {
+      "id": "samuel",
+      "name": "Samuel",
+      "path": "public/characters/samuel.webp",
+      "prompt": "Use case: stylized-concept. Single square character portrait asset for mature university educational western game. Samuel, a railway station chief man with dark brown skin, neat graying mustache, station cap, vest and pocket watch. Warm expressive adult, friendly nonchildish. Waist-up centered with entire head, hat and shoulders visible with generous cream margins. Nineteenth century western work clothes. Cohesive bold black ink woodcut and stencil engraving, limited black cream ochre palette, tactile subtle paper grain, plain cream background. Clear readable expressive face. No text, letters, watermark, borders or additional people."
+    }
+  ]
+}
