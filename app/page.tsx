@@ -1,2 +1,7 @@
 import Game from '@/components/game/Game';
-export default function Home(){return <Game/>}
+
+export const dynamic = 'force-static';
+
+export default function Home(){
+  return <Game/>;
+}
