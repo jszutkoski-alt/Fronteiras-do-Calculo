@@ -1,0 +1,27 @@
+INSTALAÇÃO DO GITHUB PAGES
+
+Substitua estes quatro arquivos no repositório:
+
+1. next.config.ts
+2. content/map-layout.ts
+3. content/characters.ts
+4. .github/workflows/deploy-pages.yml
+
+O workflow deve ficar exatamente em:
+.github/workflows/deploy-pages.yml
+
+Depois:
+
+1. Faça commit das alterações na branch main.
+2. Abra Settings > Pages no repositório.
+3. Em Build and deployment, selecione:
+   Source: GitHub Actions
+4. Aguarde o workflow "Deploy Fronteiras do Cálculo to GitHub Pages".
+5. O endereço esperado é:
+   https://jszutkoski-alt.github.io/Fronteiras-do-Calculo/
+
+IMPORTANTE
+O build deste projeto usa Vinext. A saída estática é publicada a partir de:
+dist/client
+
+O NEXT_PUBLIC_BASE_PATH garante que mapa e retratos também funcionem no endereço de projeto do GitHub Pages.

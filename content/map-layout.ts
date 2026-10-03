@@ -1,6 +1,9 @@
 import {stops} from './stops';
+
+const basePath=process.env.NEXT_PUBLIC_BASE_PATH??'';
+
 /** Percent coordinates share one 3:2 image coordinate system with the markers. */
-export const mapArtwork='/frontier-map-aligned.webp';
+export const mapArtwork=`${basePath}/frontier-map-aligned.webp`;
 export const mapViewBox='0 0 1536 1024';
 type Point=readonly [number,number];
 // Waypoints follow valley floors, bridge approaches and the riverside, not straight chords.
@@ -28,7 +31,7 @@ const via:Point[][]=[
  [[86,18],[85,15]]
 ];
 function xy([x,y]:Point){return `${(x*15.36).toFixed(2)} ${(y*10.24).toFixed(2)}`}
-function smooth(points:Point[]){let d=`M ${xy(points[0])}`;for(let i=1;i<points.length-1;i++){const p=points[i],n=points[i+1];d+=` Q ${xy(p)} ${xy([(p[0]+n[0])/2,(p[1]+n[1])/2])}`}return d+` L ${xy(points.at(-1)!)}`}
+function smooth(points:Point[]){let d=`M ${xy(points[0])}`;for(let i=1;i<points.length-1;i++){const p=points[i],n=points[i+1];d+=` Q ${xy(p)} ${xy([(p[0]+n[0])/2,(p[1]+n[1])/2])`}return d+` L ${xy(points.at(-1)!)}`}
 export const mapTrails=stops.slice(1).map((to,i)=>({from:stops[i].id,to:to.id,d:smooth([[stops[i].x,stops[i].y],...via[i],[to.x,to.y]])}));
 export const landmarkDescriptions=[
  'A rua principal do povoado, junto às fachadas de madeira.',
