@@ -14,6 +14,9 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  BASE_PATH: /Fronteiras-do-Calculo
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,10 +25,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # A versão do pnpm vem do campo "packageManager" do package.json.
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 11.25.0
           run_install: false
 
       - name: Setup Node
@@ -42,11 +45,31 @@ jobs:
           mkdir -p .openai
           printf '{}\n' > .openai/hosting.json
 
+      # O vinext 1.0.0-beta.5 pré-renderiza "/" sem o basePath e recebe 404,
+      # então a página inicial não era gerada. Este passo acrescenta o basePath
+      # às requisições internas de pré-renderização. Remover quando o vinext
+      # for atualizado para uma versão que já corrija isso.
+      - name: Patch vinext prerender (basePath)
+        run: |
+          f=$(ls -d node_modules/.pnpm/vinext@*/node_modules/vinext/dist/build/prerender.js | head -1)
+          sed -i 's|new Request(`http://localhost${urlPath}`|new Request(`http://localhost${config.basePath ?? ""}${urlPath}`|g' "$f"
+          grep -q 'config.basePath ?? ""' "$f" || { echo "Patch do vinext não aplicado"; exit 1; }
+
       - name: Build static site
         run: pnpm build
         env:
-          NEXT_PUBLIC_BASE_PATH: /Fronteiras-do-Calculo
+          NEXT_PUBLIC_BASE_PATH: ${{ env.BASE_PATH }}
           NEXT_TELEMETRY_DISABLED: 1
+
+      # O build grava os scripts em dist/client/Fronteiras-do-Calculo/_next,
+      # mas o GitHub Pages já serve a raiz do artefato em /Fronteiras-do-Calculo/.
+      # Sem mover, os scripts ficariam em /Fronteiras-do-Calculo/Fronteiras-do-Calculo/_next.
+      - name: Arrange files for GitHub Pages
+        run: |
+          test -f dist/client/index.html || { echo "index.html não foi gerado"; exit 1; }
+          mv "dist/client${BASE_PATH}/_next" dist/client/_next
+          rmdir "dist/client${BASE_PATH}"
+          touch dist/client/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
